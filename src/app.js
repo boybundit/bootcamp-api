@@ -15,10 +15,6 @@ app.use(bodyParser.json());
 
 app.use(express.static('doc'));
 
-app.get('/', function (req, res) {
-	return res.json({ hello: 'world' });
-});
-
 /**
  * @api {get} /api/book/:id Request Book information
  * @apiName GetBook
