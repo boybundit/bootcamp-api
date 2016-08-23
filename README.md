@@ -8,6 +8,7 @@ Boot Camp API
 git clone https://github.com/boybundit/bootcamp-dev.git
 cd bootcamp-dev
 npm install
+npm start
   ```
 
 ## Test
@@ -15,3 +16,10 @@ npm install
   ```
 npm test
   ```
+  
+## Documentation
+
+  ```
+npm run apidoc
+  ```
+  

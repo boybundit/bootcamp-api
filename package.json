@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "mocha"
+    "start": "node src/server.js",
+    "test": "mocha",
+	"apidoc": "apidoc -i src/ -o doc/"
   },
   "repository": {
     "type": "git",

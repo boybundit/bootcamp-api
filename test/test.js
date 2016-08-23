@@ -6,7 +6,7 @@ var assert = require('assert');
 var expect = require('expect');
 var request = require('supertest');
 
-var app = require('../app.js');
+var app = require('../src/app.js');
 
 describe('Book Service', function () {
 	describe('GET /api/book', function () {
