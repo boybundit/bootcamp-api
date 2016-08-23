@@ -1,6 +1,6 @@
 # bootcamp-dev
 
-Boot Camp API
+[Boot Camp API](https://bootcamp-dev.azurewebsites.net)
 
 ## Getting Start
 
