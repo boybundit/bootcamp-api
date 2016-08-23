@@ -1,8 +1,8 @@
 {
-  "name": "apidoc-example",
+  "name": "Boot Camp API",
   "version": "1.0.0",
-  "description": "apiDoc example project",
-  "title": "Custom apiDoc browser title",
+  "description": "This is a Boot Camp API project.",
+  "title": "Boot Camp API",
   "url": "https://bootcamp-dev.azurewebsites.net/",
   "order": [
     "GetUser",
@@ -16,7 +16,7 @@
   "apidoc": "0.2.0",
   "generator": {
     "name": "apidoc",
-    "time": "2016-08-23T16:46:01.318Z",
+    "time": "2016-08-23T16:56:06.638Z",
     "url": "http://apidocjs.com",
     "version": "0.16.1"
   }

@@ -1,4 +1,4 @@
-/*jslint node: true*/
+/*jslint node: true, es5: true*/
 'use strict';
 
 var express = require('express');
@@ -12,6 +12,8 @@ var app = express();
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(express.static('doc'));
 
 app.get('/', function (req, res) {
 	return res.json({ hello: 'world' });
