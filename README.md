@@ -9,3 +9,9 @@ git clone https://github.com/boybundit/bootcamp-dev.git
 cd bootcamp-dev
 npm install
   ```
+
+## Test
+
+  ```
+npm test
+  ```
