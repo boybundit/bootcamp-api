@@ -13,7 +13,9 @@ app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('doc'));
+app.get('/', function (req, res) {
+	return res.redirect('/doc/index.html');
+});
 
 /**
  * @api {get} /api/book/:id Request Book information
