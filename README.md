@@ -8,22 +8,35 @@
 git clone https://github.com/boybundit/bootcamp-dev.git
 cd bootcamp-dev
 npm install
-npm start
+set DB_USERNAME={{USERNAME}}
+set DB_PASSWORD={{PASSWORD}}
+node src/server.js
   ```
 
 ## Test
-mocha
-  ```
+
+To run mocha test
+
+```
 npm test
   ```
   
 ## Documentation
 
+To generate API documentation using apidoc
+
   ```
 npm run apidoc
   ```
-  
 
 ## Azure Debug Console
 
 https://bootcamp-dev.scm.azurewebsites.net/DebugConsole
+
+## Controbution
+
+  ```
+git add .
+git commit -m "{{MEANINGFUL_COMMENT}}"
+git push
+  ```
