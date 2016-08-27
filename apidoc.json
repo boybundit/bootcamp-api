@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is a Boot Camp API project.",
   "title": "Boot Camp API",
-  "url" : "https://bootcamp-dev.azurewebsites.net/",
+  "url" : "https://bootcamp-dev.azurewebsites.net",
   "order": [
     "GetUser",
     "PostUser"
