@@ -1,4 +1,4 @@
-# bootcamp-dev
+# Boot Camp API
 
 [Boot Camp API](https://bootcamp-dev.azurewebsites.net)
 
@@ -24,12 +24,6 @@ npm run apidoc
   ```
   
 
-## Azure Tricks
+## Azure Debug Console
 
-Get stdout and stderr logs from iisnode
-
-(https://bootcamp-dev.scm.azurewebsites.net/DebugConsole)
-
-Debug with Node-Inspector
-
-(https://bootcamp-dev.azurewebsites.net/server.js/debug)
+https://bootcamp-dev.scm.azurewebsites.net/DebugConsole
