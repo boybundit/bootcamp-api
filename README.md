@@ -12,7 +12,7 @@ npm start
   ```
 
 ## Test
-
+mocha
   ```
 npm test
   ```
