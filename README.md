@@ -23,3 +23,13 @@ npm test
 npm run apidoc
   ```
   
+
+## Azure Tricks
+
+Get stdout and stderr logs from iisnode
+
+(https://bootcamp-dev.scm.azurewebsites.net/DebugConsole)
+
+Debug with Node-Inspector
+
+(https://bootcamp-dev.azurewebsites.net/server.js/debug)
