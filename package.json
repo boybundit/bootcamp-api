@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "mocha",
-	"apidoc": "apidoc -i src/ -o doc/"
+    "apidoc": "apidoc -i src/ -o public/doc/"
   },
   "repository": {
     "type": "git",
