@@ -1,7 +1,7 @@
 {
   "name": "Boot Camp API",
   "version": "1.0.0",
-  "description": "This is a Boot Camp API project.",
+  "description": "This is a Boot Camp API project.<br><a href=\"https://bootcamp-dev.azurewebsites.net/mocha\">Mocha Test Report</a>",
   "title": "Boot Camp API",
   "url": "https://bootcamp-dev.azurewebsites.net",
   "sampleUrl": "https://bootcamp-dev.azurewebsites.net",
@@ -16,7 +16,7 @@
   "apidoc": "0.2.0",
   "generator": {
     "name": "apidoc",
-    "time": "2016-08-28T04:44:34.087Z",
+    "time": "2016-08-28T05:12:30.184Z",
     "url": "http://apidocjs.com",
     "version": "0.16.1"
   }

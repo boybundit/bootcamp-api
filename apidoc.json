@@ -1,7 +1,7 @@
 {
 	"name": "Boot Camp API",
 	"version": "1.0.0",
-	"description": "This is a Boot Camp API project.",
+	"description": "This is a Boot Camp API project.<br><a href=\"https://bootcamp-dev.azurewebsites.net/mocha\">Mocha Test Report</a>",
 	"title": "Boot Camp API",
 	"url" : "https://bootcamp-dev.azurewebsites.net",
 	"sampleUrl" : "https://bootcamp-dev.azurewebsites.net",
