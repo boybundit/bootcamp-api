@@ -45,9 +45,11 @@ Update the code and commit in logical chunk. Repeat.
   ```
 git add .
 git commit -m "{{MEANINGFUL_COMMENT}}"
-
+  ```
+  
 Update it back in GitHub when you go out to get coffee.
   ```
 git push origin feature-name
   ```
-When the feature is ready, create a pull request in GitHub
+  
+When the feature is ready, create a pull request in GitHub.
