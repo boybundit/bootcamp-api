@@ -40,7 +40,12 @@
     },
     "version": "0.0.0",
     "filename": "src/app.js",
-    "groupTitle": "Book"
+    "groupTitle": "Book",
+    "sampleRequest": [
+      {
+        "url": "https://bootcamp-dev.azurewebsites.net/api/book/:id"
+      }
+    ]
   },
   {
     "type": "get",
@@ -83,6 +88,11 @@
     },
     "version": "0.0.0",
     "filename": "src/app.js",
-    "groupTitle": "Test"
+    "groupTitle": "Test",
+    "sampleRequest": [
+      {
+        "url": "https://bootcamp-dev.azurewebsites.net/api/test/:id"
+      }
+    ]
   }
 ]
