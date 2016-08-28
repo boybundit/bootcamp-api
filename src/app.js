@@ -18,6 +18,10 @@ app.get('/', function (req, res) {
 	return res.redirect('/doc/index.html');
 });
 
+app.get('/mocha', function (req, res) {
+	return res.redirect('/mocha/index.html');
+});
+
 /**
  * @api {get} /api/book/:id Request Book information
  * @apiName GetBook
