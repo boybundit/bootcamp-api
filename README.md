@@ -8,8 +8,8 @@
 git clone https://github.com/boybundit/bootcamp-dev.git
 cd bootcamp-dev
 npm install
-set DB_USERNAME={{USERNAME}}
-set DB_PASSWORD={{PASSWORD}}
+set DB_USERNAME=username
+set DB_PASSWORD=password
 node src/server.js
   ```
 
@@ -44,7 +44,7 @@ git push origin feature-name
 Update the code and commit in logical chunk. Repeat.
   ```
 git add .
-git commit -m "{{MEANINGFUL_COMMENT}}"
+git commit -m "Meaningful comment"
   ```
   
 Update it back in GitHub when you go out to get coffee.
