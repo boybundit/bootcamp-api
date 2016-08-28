@@ -33,10 +33,21 @@ npm run apidoc
 
 https://bootcamp-dev.scm.azurewebsites.net/DebugConsole
 
-## Controbution
+## Contribution
 
+Check out (or create new one if not exists) feature branch, then push it back to GitHub.
+  ```
+git checkout -b feature-name master
+git push origin feature-name
+  ```
+  
+Update the code and commit in logical chunk. Repeat.
   ```
 git add .
 git commit -m "{{MEANINGFUL_COMMENT}}"
-git push
+
+Update it back in GitHub when you go out to get coffee.
   ```
+git push origin feature-name
+  ```
+When the feature is ready, create a pull request in GitHub
