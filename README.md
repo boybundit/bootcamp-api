@@ -33,9 +33,10 @@ npm run apidoc
 
 https://bootcamp-dev.scm.azurewebsites.net/DebugConsole
 
-## Controbution
+## Contribution
 
   ```
+git checkout -b feature-name master
 git add .
 git commit -m "{{MEANINGFUL_COMMENT}}"
 git push
