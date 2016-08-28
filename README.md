@@ -51,5 +51,15 @@ Update it back in GitHub when you go out to get coffee.
   ```
 git push origin feature-name
   ```
+
+When the feature is ready, create a [pull request](https://github.com/boybundit/bootcamp-api/pulls) in GitHub.
+
+To update local branch with origin/master.
+ ```
+git checkout master
+git pull
+git checkout feature-name
+git merge master
+git push origin feature-name
+  ```
   
-When the feature is ready, create a pull request in GitHub.
