@@ -41,3 +41,6 @@ jspm_packages
 
 # Ignore for Windows
 Thumbs.db
+
+# Ignore all static resources
+public/
