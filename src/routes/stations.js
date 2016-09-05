@@ -25,8 +25,6 @@ router.get('/:lat,:long', function (req, res) {
 		.parameter('long', TYPES.Numeric, req.params.long,{precision:'9',scale:'6'})
 		.execute()
 		.then(function (results) {
-			console.log(req.params.lat);
-			console.log(req.params.long);
 			return res.json(results);
 		}).fail(function (err) {
 			return res.status(404).json(err);
