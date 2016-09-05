@@ -35,3 +35,12 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Ignore for OSX
+.DS_Store
+
+# Ignore for Windows
+Thumbs.db
+
+# Ignore all static resources
+public/
