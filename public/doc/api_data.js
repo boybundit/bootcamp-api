@@ -1,7 +1,7 @@
 define({ "api": [
   {
     "type": "get",
-    "url": "/api/members/:id?point=:point",
+    "url": "/api/members/:id/?point=:point",
     "title": "Request member information",
     "name": "Members",
     "group": "Members",
@@ -120,7 +120,7 @@ define({ "api": [
     "groupTitle": "Members",
     "sampleRequest": [
       {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/members/:id?point=:point"
+        "url": "https://bootcamp-dev.azurewebsites.net/api/members/:id/?point=:point"
       }
     ]
   },

@@ -17,7 +17,7 @@ var getRequestLanguage = function (req) {
 };
 
 /**
- * @api {get} /api/members/:id?point=:point Request member information
+ * @api {get} /api/members/:id/?point=:point Request member information
  * @apiName Members
  * @apiGroup Members
  * @apiDescription This is the Description.
@@ -42,10 +42,10 @@ var getRequestLanguage = function (req) {
 router.get('/:id', function (req, res) {
 
 	var id = req.params.id,
-		point = req.query.point,
+		point = +req.query.point,
 		pointStep = 500,
-		pointNeeded = point - (req.query.point % point),
-		pointTarget = point + pointNeeded,
+		pointNeeded = pointStep - (point % pointStep),
+		pointTarget = pointNeeded + point,
 		output,
 		language = getRequestLanguage(req),
 		query1,
