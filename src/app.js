@@ -25,6 +25,11 @@ api.use('/stations', stationsRouter)
 var staticsRouter = require('./routes/statics');
 api.use('/statics', staticsRouter)
 
+var pricesRouter = require('./routes/prices');
+api.use('/prices', pricesRouter)
+
+var staticsRouter = require('./routes/statics');
+api.use('/statics', staticsRouter)
 app.use('/api', api);
 
 app.get('/', function (req, res) {
