@@ -3,12 +3,24 @@ var router  = express.Router();
 var db = require('../database');
 var sqlHelper = require('../lib/sql-helper');
 
-var VEHICLE_TYPE = 1;
-var FOOD_TYPE = 2;
-var FACILITY_TYPE = 3;
+router.VEHICLE_TYPE = 1;
+router.FOOD_TYPE = 2;
+router.FACILITY_TYPE = 3;
+router.FUEL_TYPE = 4;
+
+var getRequestLanguage = function(req) {
+	var acceptLanguage = require('accept-language');
+	acceptLanguage.languages(['en-US', 'th-TH']);
+	var language = req.get('Accept-Language');
+	language = acceptLanguage.get(language);
+	language = language.substring(0, 2);
+	//console.log(language);
+	return language;
+}
 
 var getStatic = function(req, res, type) {
-  db.sql(sqlHelper.conv_i18n('SELECT Title[_lang] from Static WHERE TypeID = ' + type + ';','th'))
+  var language = getRequestLanguage(req);
+  db.sql(sqlHelper.conv_i18n('SELECT TypeNumber, Title[_lang] from Static WHERE TypeID = ' + type + ';', language))
   .execute()
   .then(function (results) {
     res.json(results);
@@ -18,53 +30,48 @@ var getStatic = function(req, res, type) {
 }
 
 /**
- * @api {get} /api/vehicles Get all available vehicle types
+ * @api {get} /api/statics/vehicles Get all available vehicle types
  * @apiName GetVehicles
  * @apiGroup Statics
  *
- * @apiSuccess {String} test What is test?
+ * @apiSuccess {List} vehicles List of all available vehicle types
  */
 router.get('/vehicles', function(req, res) {
-  getStatic(VEHICLE_TYPE);
+  getStatic(req, res, router.VEHICLE_TYPE);
 });
 
 /**
- * @api {get} /api/foods Get all available food types
+ * @api {get} /api/statics/foods Get all available food types
  * @apiName GetFoods
  * @apiGroup Statics
  *
- * @apiSuccess {String} test What is test?
+ * @apiSuccess {List} foods List of all available food types
  */
 router.get('/foods', function(req, res) {
-  getStatic(FOOD_TYPE);
+  getStatic(req, res, router.FOOD_TYPE);
 });
 
 /**
- * @api {get} /api/facilities Get all available facility types
+ * @api {get} /api/statics/facilities Get all available facility types
  * @apiName GetFacilities
  * @apiGroup Statics
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  *
- * @apiSuccess {String} test What is test?
+ * @apiSuccess {List} facilities List of all available facility types
  */
 router.get('/facilities', function(req, res) {
-  getStatic(FACILITY_TYPE);
+  getStatic(req, res, router.FACILITY_TYPE);
 });
 
 /**
- * @api {get} /api/fuels Get all available fuel types
+ * @api {get} /api/statics/fuels Get all available fuel types
  * @apiName GetFuels
  * @apiGroup Statics
  *
- * @apiSuccess {String} test What is test?
+ * @apiSuccess {List} fuels List of all available fuel types
  */
 router.get('/fuels', function(req, res) {
-  res.json([
-    // TODO: Retrive from DB Fuel table
-    {id: 1, title: 'E20'},
-    {id: 2, title: 'E85'},
-    {id: 3, title: 'Gasohol 95'},
-    {id: 4, title: 'Diesel'}
-  ]);
+  getStatic(req, res, router.FUEL_TYPE);
 });
 
 module.exports = router;
