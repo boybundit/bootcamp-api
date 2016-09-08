@@ -3,5 +3,8 @@
   "short_name": "Boot Camp",
   "start_url": "/",
   "display": "standalone",
-  "gcm_sender_id": "203270039349"
+  "gcm_sender_id": "203270039349",
+  "permissions": [
+    "gcm"
+  ]
 }
