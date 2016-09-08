@@ -1,6 +1,131 @@
 define({ "api": [
   {
     "type": "get",
+    "url": "/api/members/:id?point=:point",
+    "title": "Request member information",
+    "name": "Members",
+    "group": "Members",
+    "description": "<p>This is the Description.</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept-Language",
+            "description": "<p>Prefered languages</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Accept-Language\": \"th\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Member ID</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "point",
+            "description": "<p>Current point</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "MemberID",
+            "description": "<p>Member ID</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Level",
+            "description": "<p>Membership level</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "PointTarget",
+            "description": "<p>Points target for next redemption</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "PointNeeded",
+            "description": "<p>Points needed for next redemption</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "Preferences",
+            "description": "<p>Preferences</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Preferences.TypeID",
+            "description": "<p>Category ID</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Preferences.Description",
+            "description": "<p>Category description</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Preferences.TypeNumber",
+            "description": "<p>Choice ID</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Preferences.Title",
+            "description": "<p>Choice title</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routes/members.js",
+    "groupTitle": "Members",
+    "sampleRequest": [
+      {
+        "url": "https://bootcamp-dev.azurewebsites.net/api/members/:id?point=:point"
+      }
+    ]
+  },
+  {
+    "type": "get",
     "url": "/api/prices",
     "title": "Get prices of all fuel types",
     "name": "GetFuelPrices",
@@ -487,151 +612,6 @@ define({ "api": [
     "sampleRequest": [
       {
         "url": "https://bootcamp-dev.azurewebsites.net/api/getByKeyword/:keyword,:lang"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/api/users/:id",
-    "title": "Request User information",
-    "name": "GetUser",
-    "group": "User",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "id",
-            "description": "<p>Users unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "firstname",
-            "description": "<p>Firstname of the User.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "lastname",
-            "description": "<p>Lastname of the User.</p>"
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "src/routes/sql-helper_test.js",
-    "groupTitle": "User",
-    "sampleRequest": [
-      {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/users/:id"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/api/members/:id/:point",
-    "title": "Request Member information",
-    "name": "members",
-    "group": "members",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "id",
-            "description": "<p>MemberID.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "point",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "MemberID",
-            "description": "<p>MemberID.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "Level",
-            "description": "<p>Membership level.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "PointNeeded",
-            "description": "<p>Points needed for next redemption.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "Preferences",
-            "description": "<p>Preferences.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "TypeID",
-            "description": "<p>Type Number.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "Description",
-            "description": "<p>TypeID description.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "TypeNumber",
-            "description": "<p>Type Number.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "Title",
-            "description": "<p>(lang) Preference.</p>"
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "src/routes/members.js",
-    "groupTitle": "members",
-    "sampleRequest": [
-      {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/members/:id/:point"
       }
     ]
   }
