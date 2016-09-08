@@ -1,6 +1,7 @@
 /*jslint node: true, es5: true*/
 'use strict';
 
+var Promise = require("bluebird");
 var express = require('express');
 var router  = express.Router();
 var db = require('../database.js');
@@ -18,9 +19,8 @@ var getRequestLanguage = function (req) {
 
 /**
  * @api {get} /api/members/:id/?point=:point Request member information
- * @apiName Members
+ * @apiName GetMembers
  * @apiGroup Members
- * @apiDescription This is the Description.
  * @apiHeader {String} Accept-Language Prefered languages
  * @apiHeaderExample {json} Header-Example:
  *     {
@@ -150,6 +150,72 @@ router.get('/:id', function (req, res) {
 			return res.status(404).json(err);
 		});	
 	*/
+});
+
+
+/**
+ * @api {post} /api/members/:id/ Update member information
+ * @apiName PostMembers
+ * @apiGroup Members
+ * @apiHeader {String} Accept-Language Prefered languages
+ * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "Accept-Language": "th"
+ *     }
+ *
+ * @apiParam {Object[]}		Preferences				Preferences
+ * @apiParam {String}		Preferences.TypeID		Category ID
+ * @apiParam {String}		Preferences.TypeNumber	Choice ID
+ * @apiParamExample {json} Request-Example:
+ *     {
+ *       "Preference": [
+ *         {
+ *           "TypeID": 1,
+ *           "TypeNumber": 1
+ *         },
+ *         {
+ *           "TypeID": 1,
+ *           "TypeNumber": 2
+ *         }
+ *       ]
+ *     }
+ * @apiSuccess {String}		MemberID				Member ID
+ * @apiSuccess {String}		Level					Membership level
+ * @apiSuccess {Number}		PointTarget				Points target for next redemption
+ * @apiSuccess {Number}		PointNeeded				Points needed for next redemption
+ * @apiSuccess {Object[]}	Preferences				Preferences
+ * @apiSuccess {String}		Preferences.TypeID		Category ID
+ * @apiSuccess {String}		Preferences.Description	Category description
+ * @apiSuccess {String}		Preferences.TypeNumber	Choice ID
+ * @apiSuccess {String}		Preferences.Title		Choice title
+ * 
+ * @apiSampleRequest off
+ */
+router.post('/:id', function (req, res) {
+	var id = req.params.id,
+		query1,
+		query2;
+	query1 = 'DELETE FROM MemberPreference \
+		WHERE MemberID = @id';
+	query2 = 'INSERT INTO MemberPreference (MemberID, TypeID, TypeNumber) \
+		VALUES (@id, @typeId, @typeNumber)';
+	db.sql(query1)
+		.parameter('id', TYPES.Char, id)
+		.execute()
+		.then(function (result1) {
+			return Promise.map(req.body.Preference, function (preference) {
+				return db.sql(query2)
+					.parameter('id', TYPES.Char, id)
+					.parameter('typeId', TYPES.Char, preference.TypeID)
+					.parameter('typeNumber', TYPES.Char, preference.TypeNumber)
+					.execute();
+			});
+		})
+		.then(function (result2) {
+			return res.redirect('./' + id);
+		}).fail(function (err) {
+			return res.status(404).json(err);
+		});
 });
 
 module.exports = router;

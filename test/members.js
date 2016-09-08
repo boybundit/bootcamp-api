@@ -24,4 +24,24 @@ describe('Members Endpoint', function () {
 		});
 	});
 	
+	describe('POST /api/members/1', function () {
+		it('should update preference of MemberID=1', function (done) {
+			request(app)
+				.post('/api/members/1')
+				.send({
+					"Preference": [
+						{ "TypeID": 1, "TypeNumber": 1 },
+						{ "TypeID": 1, "TypeNumber": 2 }
+					]
+				})
+				.expect(302)
+				.end(function (err, res) {
+					if (err) {
+						return done(err);
+					}
+					done();
+				});
+		});
+	});
+	
 });

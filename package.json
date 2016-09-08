@@ -21,6 +21,7 @@
   "homepage": "https://github.com/boybundit/bootcamp-dev#readme",
   "dependencies": {
     "accept-language": "^2.0.17",
+    "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "expect.js": "^0.3.1",
