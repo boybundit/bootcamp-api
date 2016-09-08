@@ -320,7 +320,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/promotion",
+    "url": "/api/promotions",
     "title": "Get all active promotions",
     "name": "GetPromotions",
     "group": "Promotion",
@@ -349,7 +349,7 @@ define({ "api": [
     "groupTitle": "Promotion",
     "sampleRequest": [
       {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/promotion"
+        "url": "https://bootcamp-dev.azurewebsites.net/api/promotions"
       }
     ]
   },

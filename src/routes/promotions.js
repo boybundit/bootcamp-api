@@ -4,7 +4,7 @@ var db = require('../database');
 var sqlHelper = require('../lib/sql-helper');
 
 /**
- * @api {get} /api/promotion Get all active promotions
+ * @api {get} /api/promotions Get all active promotions
  * @apiName GetPromotions
  * @apiGroup Promotion
  *
