@@ -17,10 +17,10 @@ app.use(bodyParser.json());
 
 // Add new route here.
 var usersRouter = require('./routes/users');
-api.use('/users', usersRouter)
+api.use('/users', usersRouter);
 
 var stationsRouter = require('./routes/stations');
-api.use('/stations', stationsRouter)
+api.use('/stations', stationsRouter);
 
 var promotionsRouter = require('./routes/promotions');
 api.use('/promotions', promotionsRouter)
