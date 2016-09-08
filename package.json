@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm test",
-	"start": "node src/server.js",
+    "start": "node src/server.js",
     "test": "mocha --reporter mochawesome --reporter-options reportDir=public/mocha,reportName=index",
     "apidoc": "apidoc -i src/ -o public/doc/"
   },
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/boybundit/bootcamp-dev#readme",
   "dependencies": {
+    "accept-language": "^2.0.17",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
+    "expect.js": "^0.3.1",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "sequelize": "^3.24.1",
