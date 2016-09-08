@@ -22,8 +22,8 @@ api.use('/users', usersRouter)
 var stationsRouter = require('./routes/stations');
 api.use('/stations', stationsRouter)
 
-var staticsRouter = require('./routes/statics');
-api.use('/statics', staticsRouter)
+var promotionsRouter = require('./routes/promotions');
+api.use('/promotions', promotionsRouter)
 
 app.use('/api', api);
 
