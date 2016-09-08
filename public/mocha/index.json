@@ -6,17 +6,10 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-    "start": "2016-09-07T10:41:37.046Z",
-    "end": "2016-09-07T10:41:37.274Z",
-    "duration": 228,
+    "start": "2016-09-08T08:44:43.040Z",
+    "end": "2016-09-08T08:44:43.120Z",
+    "duration": 80,
     "testsRegistered": 2,
-=======
-    "start": "2016-09-05T14:52:08.936Z",
-    "end": "2016-09-05T14:52:09.044Z",
-    "duration": 108,
-    "testsRegistered": 1,
->>>>>>> done getting 10 nearest stations
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -40,17 +33,16 @@
                 "title": "should respond with json",
                 "fullTitle": "Users Endpoint GET /api/users should respond with json",
                 "timedOut": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-                "duration": 140,
+                "duration": 40,
                 "state": "passed",
-                "speed": "slow",
+                "speed": "medium",
                 "pass": true,
                 "fail": false,
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "ebf60aa1-db43-42c4-8045-f29d839c9ccb",
-                "parentUUID": "f7e0a58f-2a13-4c58-ab90-3561e31e6137",
+                "uuid": "1f3c8c0a-8c2a-4223-a717-13bfb64b7359",
+                "parentUUID": "6bfa62de-99d2-4f0d-b6fb-04bbca8a8c11",
                 "skipped": false
               }
             ],
@@ -58,23 +50,23 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\sql-helper_test.js",
-            "uuid": "f7e0a58f-2a13-4c58-ab90-3561e31e6137",
-            "fullFile": "D:\\Works\\bootcamp-dev\\bootcamp-dev\\test\\sql-helper_test.js",
+            "uuid": "6bfa62de-99d2-4f0d-b6fb-04bbca8a8c11",
+            "fullFile": "d:\\NodeJS\\Bootcamp\\bootcamp-dev\\test\\sql-helper_test.js",
             "passes": [
               {
                 "title": "should respond with json",
                 "fullTitle": "Users Endpoint GET /api/users should respond with json",
                 "timedOut": false,
-                "duration": 140,
+                "duration": 40,
                 "state": "passed",
-                "speed": "slow",
+                "speed": "medium",
                 "pass": true,
                 "fail": false,
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "ebf60aa1-db43-42c4-8045-f29d839c9ccb",
-                "parentUUID": "f7e0a58f-2a13-4c58-ab90-3561e31e6137",
+                "uuid": "1f3c8c0a-8c2a-4223-a717-13bfb64b7359",
+                "parentUUID": "6bfa62de-99d2-4f0d-b6fb-04bbca8a8c11",
                 "skipped": false
               }
             ],
@@ -91,7 +83,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 140
+            "duration": 40
           }
         ],
         "tests": [],
@@ -99,8 +91,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\sql-helper_test.js",
-        "uuid": "1bcb693c-5763-4158-8641-a9b7b22e6077",
-        "fullFile": "D:\\Works\\bootcamp-dev\\bootcamp-dev\\test\\sql-helper_test.js",
+        "uuid": "63e4959a-1fa3-49a9-ba40-3385e0148af9",
+        "fullFile": "d:\\NodeJS\\Bootcamp\\bootcamp-dev\\test\\sql-helper_test.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -128,24 +120,16 @@
                 "title": "should respond with json",
                 "fullTitle": "Users Endpoint GET /api/users should respond with json",
                 "timedOut": false,
-                "duration": 40,
-=======
-                "duration": 93,
->>>>>>> done getting 10 nearest stations
+                "duration": 8,
                 "state": "passed",
-                "speed": "slow",
+                "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-                "uuid": "43bff30f-a5d7-4e22-b3e5-91be8a344222",
-                "parentUUID": "2bc3f7d4-f9d0-4465-83f9-5c3da23847de",
-=======
-                "uuid": "b08973e8-e069-4801-b063-19449dc217ab",
-                "parentUUID": "5c167669-be8e-4995-a432-8e32ab591372",
->>>>>>> done getting 10 nearest stations
+                "uuid": "f978bc32-195e-4c36-b89e-f764ecb4443d",
+                "parentUUID": "1c99defb-dad0-4aee-b2ef-3adc25dc0044",
                 "skipped": false
               }
             ],
@@ -153,37 +137,23 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\users.js",
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-            "uuid": "2bc3f7d4-f9d0-4465-83f9-5c3da23847de",
-            "fullFile": "D:\\Works\\bootcamp-dev\\bootcamp-dev\\test\\users.js",
-=======
-            "uuid": "5c167669-be8e-4995-a432-8e32ab591372",
+            "uuid": "1c99defb-dad0-4aee-b2ef-3adc25dc0044",
             "fullFile": "d:\\NodeJS\\Bootcamp\\bootcamp-dev\\test\\users.js",
->>>>>>> done getting 10 nearest stations
             "passes": [
               {
                 "title": "should respond with json",
                 "fullTitle": "Users Endpoint GET /api/users should respond with json",
                 "timedOut": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-                "duration": 40,
-=======
-                "duration": 93,
->>>>>>> done getting 10 nearest stations
+                "duration": 8,
                 "state": "passed",
-                "speed": "slow",
+                "speed": "fast",
                 "pass": true,
                 "fail": false,
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-                "uuid": "43bff30f-a5d7-4e22-b3e5-91be8a344222",
-                "parentUUID": "2bc3f7d4-f9d0-4465-83f9-5c3da23847de",
-=======
-                "uuid": "b08973e8-e069-4801-b063-19449dc217ab",
-                "parentUUID": "5c167669-be8e-4995-a432-8e32ab591372",
->>>>>>> done getting 10 nearest stations
+                "uuid": "f978bc32-195e-4c36-b89e-f764ecb4443d",
+                "parentUUID": "1c99defb-dad0-4aee-b2ef-3adc25dc0044",
                 "skipped": false
               }
             ],
@@ -200,11 +170,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-            "duration": 40
-=======
-            "duration": 93
->>>>>>> done getting 10 nearest stations
+            "duration": 8
           }
         ],
         "tests": [],
@@ -212,13 +178,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\users.js",
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-        "uuid": "a0189a3b-94b6-4410-b5e6-4565c4d9b325",
-        "fullFile": "D:\\Works\\bootcamp-dev\\bootcamp-dev\\test\\users.js",
-=======
-        "uuid": "19302b91-1ea7-429e-a52c-a3dbd92d3399",
+        "uuid": "9b5b8208-43d0-464f-8aec-d153a62d1a02",
         "fullFile": "d:\\NodeJS\\Bootcamp\\bootcamp-dev\\test\\users.js",
->>>>>>> done getting 10 nearest stations
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -240,11 +201,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-    "uuid": "7a436da8-d432-4048-8657-b28ae6321e77",
-=======
-    "uuid": "84cc4609-f74d-450f-92c9-3fa423220896",
->>>>>>> done getting 10 nearest stations
+    "uuid": "5889732c-1214-4c3c-a80f-f624a39a092d",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -269,41 +226,32 @@
       "title": "should respond with json",
       "fullTitle": "GET /api/users should respond with json",
       "timedOut": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-      "duration": 140,
+      "duration": 40,
       "state": "passed",
-      "speed": "slow",
+      "speed": "medium",
       "pass": true,
       "fail": false,
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "975d0217-d63f-4ecf-9154-be2ba05bbf8a",
-      "parentUUID": "f7e0a58f-2a13-4c58-ab90-3561e31e6137",
+      "uuid": "b79d9abb-9b58-4a72-b057-ad51b6be9c03",
+      "parentUUID": "6bfa62de-99d2-4f0d-b6fb-04bbca8a8c11",
       "skipped": false
     },
     {
       "title": "should respond with json",
       "fullTitle": "GET /api/users should respond with json",
       "timedOut": false,
-      "duration": 40,
-=======
-      "duration": 93,
->>>>>>> done getting 10 nearest stations
+      "duration": 8,
       "state": "passed",
-      "speed": "slow",
+      "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
       "isRoot": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-      "uuid": "cdda1b44-325d-41a3-92a9-4e04e8375b62",
-      "parentUUID": "2bc3f7d4-f9d0-4465-83f9-5c3da23847de",
-=======
-      "uuid": "0634f58e-ea89-4105-a23d-25e12caf664d",
-      "parentUUID": "5c167669-be8e-4995-a432-8e32ab591372",
->>>>>>> done getting 10 nearest stations
+      "uuid": "c560e0c3-cb54-46e1-b2f2-471356d331a3",
+      "parentUUID": "1c99defb-dad0-4aee-b2ef-3adc25dc0044",
       "skipped": false
     }
   ],
@@ -313,41 +261,32 @@
       "title": "should respond with json",
       "fullTitle": "GET /api/users should respond with json",
       "timedOut": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-      "duration": 140,
+      "duration": 40,
       "state": "passed",
-      "speed": "slow",
+      "speed": "medium",
       "pass": true,
       "fail": false,
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "92030529-c003-47ea-9fc7-155cfd7a0a6d",
-      "parentUUID": "f7e0a58f-2a13-4c58-ab90-3561e31e6137",
+      "uuid": "d317cc30-5ce5-4dac-b500-c8ec73811dcf",
+      "parentUUID": "6bfa62de-99d2-4f0d-b6fb-04bbca8a8c11",
       "skipped": false
     },
     {
       "title": "should respond with json",
       "fullTitle": "GET /api/users should respond with json",
       "timedOut": false,
-      "duration": 40,
-=======
-      "duration": 93,
->>>>>>> done getting 10 nearest stations
+      "duration": 8,
       "state": "passed",
-      "speed": "slow",
+      "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/users'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
       "isRoot": false,
-<<<<<<< 67efdfc415f01a198db6f11312d13621072bca17
-      "uuid": "992641c9-f6a4-496c-b335-1d983b7de848",
-      "parentUUID": "2bc3f7d4-f9d0-4465-83f9-5c3da23847de",
-=======
-      "uuid": "d0036074-e2c0-4b32-ba99-0deffce78f26",
-      "parentUUID": "5c167669-be8e-4995-a432-8e32ab591372",
->>>>>>> done getting 10 nearest stations
+      "uuid": "13f9425e-c94e-463f-8649-09c61207c25a",
+      "parentUUID": "1c99defb-dad0-4aee-b2ef-3adc25dc0044",
       "skipped": false
     }
   ],
