@@ -6,7 +6,7 @@ var sqlHelper = require('../lib/sql-helper');
 /**
  * @api {get} /api/promotions Get all active promotions
  * @apiName GetPromotions
- * @apiGroup Promotion
+ * @apiGroup Promotions
  *
  * @apiSuccess {String} header Header of the promotion.
  * @apiSuccess {String} body HTML tags for Body of the promotion.

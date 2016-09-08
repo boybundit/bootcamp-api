@@ -323,7 +323,7 @@ define({ "api": [
     "url": "/api/promotions",
     "title": "Get all active promotions",
     "name": "GetPromotions",
-    "group": "Promotion",
+    "group": "Promotions",
     "success": {
       "fields": {
         "Success 200": [
@@ -346,7 +346,7 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "src/routes/promotions.js",
-    "groupTitle": "Promotion",
+    "groupTitle": "Promotions",
     "sampleRequest": [
       {
         "url": "https://bootcamp-dev.azurewebsites.net/api/promotions"
