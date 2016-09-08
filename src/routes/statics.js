@@ -33,8 +33,11 @@ var getStatic = function(req, res, type) {
  * @api {get} /api/statics/vehicles Get all available vehicle types
  * @apiName GetVehicles
  * @apiGroup Statics
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
+ * @apiSuccess {Object[]} vehicles List of all available vehicle types
+ * @apiSuccess {TypeNumber} vehicles.TypeNumber ID of vehicle type
+ * @apiSuccess {String} vehicles.Title Name of vehicle type
  *
- * @apiSuccess {List} vehicles List of all available vehicle types
  */
 router.get('/vehicles', function(req, res) {
   getStatic(req, res, router.VEHICLE_TYPE);
@@ -44,8 +47,10 @@ router.get('/vehicles', function(req, res) {
  * @api {get} /api/statics/foods Get all available food types
  * @apiName GetFoods
  * @apiGroup Statics
- *
- * @apiSuccess {List} foods List of all available food types
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
+ * @apiSuccess {Object[]} foods List of all available food types
+ * @apiSuccess {TypeNumber} foods.TypeNumber ID of food type
+ * @apiSuccess {String} foods.Title Name of food type
  */
 router.get('/foods', function(req, res) {
   getStatic(req, res, router.FOOD_TYPE);
@@ -56,22 +61,12 @@ router.get('/foods', function(req, res) {
  * @apiName GetFacilities
  * @apiGroup Statics
  * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
- *
- * @apiSuccess {List} facilities List of all available facility types
+ * @apiSuccess {Object[]} facilities List of all available facility types
+ * @apiSuccess {TypeNumber} facilities.TypeNumber ID of facility type
+ * @apiSuccess {String} facilities.Title Name of facility type
  */
 router.get('/facilities', function(req, res) {
   getStatic(req, res, router.FACILITY_TYPE);
-});
-
-/**
- * @api {get} /api/statics/fuels Get all available fuel types
- * @apiName GetFuels
- * @apiGroup Statics
- *
- * @apiSuccess {List} fuels List of all available fuel types
- */
-router.get('/fuels', function(req, res) {
-  getStatic(req, res, router.FUEL_TYPE);
 });
 
 module.exports = router;

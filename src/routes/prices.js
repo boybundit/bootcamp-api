@@ -15,9 +15,10 @@ var getRequestLanguage = function(req) {
 }
 
 /**
- * @api {get} /api/prices/fuels Get prices of all fuel types
+ * @api {get} /api/prices Get prices of all fuel types
  * @apiName GetFuelPrices
  * @apiGroup Prices
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  *
  * @apiSuccess {Object[]} fuelPrices List of fuel with pricing information
  * @apiSuccess {Number} fuelPrices.ID ID of fuel type
