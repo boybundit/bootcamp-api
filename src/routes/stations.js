@@ -28,15 +28,16 @@ router.get('/', function(req, res) {
  * @apiSuccess {String} Address Address of the station.
  * @apiSuccess {String} City City (province) of the station.
  * @apiSuccess {String} Country Country of the station.
- * @apiSuccess {String} Name Name of the station.
+ * @apiSuccess {String} DisplayName Name of the station.
  * @apiSuccess {String} PostalCode PostalCode of the station.
  * @apiSuccess {Number} Latitude Latitude of the station location.
  * @apiSuccess {Number} Longitude Longitude of the station location.
+ * @apiSuccess {Number} Distance Distance of the station from the current location
  */
 router.get('/nearbyStations/:lat,:long,:lang', function (req, res) {
-	db.sql( conv_i18n('Select Id, AddressLine[_lang] Address, City[_lang] City, Country, DisplayName[_lang] Name, PostalCode, Latitude, Longitude',req.params.lang) +
+	db.sql(conv_i18n('Select Id, AddressLine[_lang], City[_lang], Country, DisplayName[_lang], PostalCode, Latitude, Longitude, (geography::Point( @lat, @long, 4326)).STDistance(st.Location) Distance',req.params.lang) +
 	 " FROM ServiceStation st\
-	 ORDER BY (geography::Point( @lat, @long, 4326)).STDistance(st.Location)")
+	 ORDER BY Distance")
 	 	.parameter('lat', TYPES.Numeric, req.params.lat,{precision:'9',scale:'6'})
 		.parameter('long', TYPES.Numeric, req.params.long,{precision:'9',scale:'6'})
 		.execute()
@@ -51,7 +52,9 @@ router.get('/nearbyStations/:lat,:long,:lang', function (req, res) {
  * @api {get} /api/getByKeyword/:keyword,:lang Request stations by keyword
  * @apiName GetStaionsByKeyword
  * @apiGroup Station
- *
+ * 
+ * @apiParam {String} lat Latitude of the current Location.
+ * @apiParam {String} long Longitude of the current Location
  * @apiParam {String} keyword Keyword used to search for the stations
  * @apiParam {String} lang Language of the interface
  *
@@ -59,17 +62,20 @@ router.get('/nearbyStations/:lat,:long,:lang', function (req, res) {
  * @apiSuccess {String} Address Address of the station.
  * @apiSuccess {String} City City (province) of the station.
  * @apiSuccess {String} Country Country of the station.
- * @apiSuccess {String} Name Name of the station.
+ * @apiSuccess {String} DisplayName Name of the station.
  * @apiSuccess {String} PostalCode PostalCode of the station.
  * @apiSuccess {Number} Latitude Latitude of the station location.
  * @apiSuccess {Number} Longitude Longitude of the station location.
+ * @apiSuccess {Number} Distance Distance of the station from the current location
  */
-router.get('/getByKeyword/:keyword,:lang', function (req, res) {
-	db.sql(conv_i18n('Select Id, AddressLine[_lang] Address, City[_lang] City, Country, DisplayName[_lang] Name, PostalCode, Latitude, Longitude',req.params.lang) +
+router.get('/getByKeyword/:lat,:long,:keyword,:lang', function (req, res) {
+	db.sql(conv_i18n('Select Id, AddressLine[_lang], City[_lang], Country, DisplayName[_lang], PostalCode, Latitude, Longitude, (geography::Point( @lat, @long, 4326)).STDistance(st.Location) Distance',req.params.lang) +
 	 " FROM ServiceStation st\
 	 WHERE DisplayName_"+ req.params.lang +" LIKE ('%'+@keyword+'%')\
 	 	OR City_"+ req.params.lang +" LIKE ('%'+@keyword+'%')\
 		 OR AddressLine_"+ req.params.lang +" LIKE ('%'+@keyword+'%')")
+		.parameter('lat', TYPES.Numeric, req.params.lat,{precision:'9',scale:'6'})
+		.parameter('long', TYPES.Numeric, req.params.long,{precision:'9',scale:'6'})
 	 	.parameter('keyword', TYPES.NChar, req.params.keyword)
 		.execute()
 		.then(function (results) {
