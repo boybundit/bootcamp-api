@@ -9,7 +9,7 @@ var TYPES = require('tedious').TYPES;
  * @apiGroup members
  *
  * @apiParam {String} id MemberID.
- * @apiParam {int} points  
+ * @apiParam {int} point  
  *
  * @apiSuccess {String} MemberID MemberID.
  * @apiSuccess {String} Level Membership level.
