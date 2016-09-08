@@ -33,7 +33,7 @@ api.use('/statics', staticsRouter)
 app.use('/api', api);
 
 var memberRouter = require('./routes/members');
-api.use('/members', pricesRouter)
+api.use('/members', memberRouter)
 
 app.get('/', function (req, res) {
 	return res.redirect('/doc/index.html');
