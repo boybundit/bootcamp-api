@@ -85,6 +85,27 @@ router.get('/getByKeyword/:lat,:long,:keyword,:lang', function (req, res) {
 		});
 });
 
+router.get('/getStationFuelTypeById/:id', function (req, res) {
+	db.sql("")
+		.parameter('id', TYPES.Char, req.params.id)
+		.execute()
+		.then(function (results) {
+			return res.json(results);
+		}).fail(function (err) {
+			return res.status(404).json(err);
+		});
+});
+
+router.get('/getStationServicesById/:id', function (req, res) {
+	db.sql("")
+		.parameter('id', TYPES.Char, req.params.id)
+		.execute()
+		.then(function (results) {
+			return res.json(results);
+		}).fail(function (err) {
+			return res.status(404).json(err);
+		});
+});
 
 
 module.exports = router;
