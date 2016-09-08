@@ -42,7 +42,7 @@ var getRequestLanguage = function (req) {
 router.get('/:id', function (req, res) {
 
 	var id = req.params.id,
-		point = +req.query.point,
+		point = +req.query.point || 0,
 		pointStep = 500,
 		pointNeeded = pointStep - (point % pointStep),
 		pointTarget = pointNeeded + point,
@@ -51,7 +51,7 @@ router.get('/:id', function (req, res) {
 		query1,
 		query2;
 		
-	query1 = 'Select Member.MemberID, MemberLevel.level \
+	query1 = 'Select Member.MemberID, MemberLevel.Level \
 		from Member \
 		join MemberLevel \
 		on MemberLevel.MinPoint <= @point and MemberLevel.MaxPoint >= @point \
