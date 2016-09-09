@@ -15,12 +15,12 @@
       <div class="container">
         <div class="report-info-cnt">
           <h1 class="report-title">bootcamp-dev</h1>
-          <h3 class="report-date">Friday, September 9 2016, 04:42pm</h3>
+          <h3 class="report-date">Friday, September 9 2016, 04:50pm</h3>
         </div>
         <div class="nav-right">
           <div class="quick-summary-cnt">
               <ul class="list-unstyled quick-summary">
-                <li class="qs-item summary-duration" title="Duration">8.891<span>S</span></li>
+                <li class="qs-item summary-duration" title="Duration">8.739<span>S</span></li>
                 <li class="qs-item summary-suites" title="Suites">20</li>
                 <li class="qs-item summary-tests" title="Tests">14</li>
                 <li class="qs-item summary-passes" title="Passed" data-filter="passed">13</li>
@@ -37,7 +37,7 @@
       <div class="container">
           <div class="row">
             <div class="summary-col summary-duration">
-              <h1 class="summary-count">8.891<span>S</span></h1>
+              <h1 class="summary-count">8.739<span>S</span></h1>
               <h4 class="summary-label">S</h4>
             </div>
             <div class="summary-col summary-suites" title="Suites">
@@ -73,22 +73,22 @@
     <!-- Suites -->
     <div class="details container">
             <section class="suite-wrap">
-          <div id="3ba5e7c6-953a-4ece-88d3-f66a28477a3c" class="suite has-suites">
+          <div id="08fe8713-f7c1-4158-b503-0beab80262ed" class="suite has-suites">
             <h3 class="suite-title">Members Endpoint</h3>
             <h5 class="suite-filename">\test\members.js</h5>
         
               <section class="suite-wrap">
-          <div id="10b5fbfa-24a0-4bc6-b059-b48906c1814d" class="suite has-tests has-passed">
+          <div id="0f5a36b6-ae41-46b7-98ea-2dace92a7352" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/members/7800764800000006309</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="10b5fbfa-24a0-4bc6-b059-b48906c1814d" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="0f5a36b6-ae41-46b7-98ea-2dace92a7352" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">1.288 s</li>
+                <li class="suite-summary-item duration">939 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -96,11 +96,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#10b5fbfa-24a0-4bc6-b059-b48906c1814d-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#0f5a36b6-ae41-46b7-98ea-2dace92a7352-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="10b5fbfa-24a0-4bc6-b059-b48906c1814d-test-list" class="list-group test-list collapse in">
-                    <div id="648a0cdd-df45-424d-a05f-b46003cf2b8a" class="list-group-item test passed">
+                <div id="0f5a36b6-ae41-46b7-98ea-2dace92a7352-test-list" class="list-group test-list collapse in">
+                    <div id="bc557b62-19cb-448c-ac41-95340b90d8bf" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -108,14 +108,14 @@
               should respond with MemberID=7800764800000006309
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#648a0cdd-df45-424d-a05f-b46003cf2b8a > .test-code.collapse">Code</button>
-              <span class="test-duration slow">1.288 s</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#bc557b62-19cb-448c-ac41-95340b90d8bf > .test-code.collapse">Code</button>
+              <span class="test-duration slow">939 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.MemberID).to.eql(<span class="hljs-string">'7800764800000006309'</span>);<br>		done();<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.MemberID).to.eql(<span class="hljs-string">'7800764800000006309'</span>);<br>		done();<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -126,17 +126,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="f406f532-072b-4d5d-b244-024da02c8e0a" class="suite has-tests has-passed">
+          <div id="06f3e138-56e6-4595-81af-0fd54bef6af5" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/members/7800764800000006309?point=200</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="f406f532-072b-4d5d-b244-024da02c8e0a" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="06f3e138-56e6-4595-81af-0fd54bef6af5" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">881 ms</li>
+                <li class="suite-summary-item duration">842 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -144,11 +144,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#f406f532-072b-4d5d-b244-024da02c8e0a-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#06f3e138-56e6-4595-81af-0fd54bef6af5-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="f406f532-072b-4d5d-b244-024da02c8e0a-test-list" class="list-group test-list collapse in">
-                    <div id="8d43c2b5-64b2-460e-86f5-2143c44626d2" class="list-group-item test passed">
+                <div id="06f3e138-56e6-4595-81af-0fd54bef6af5-test-list" class="list-group test-list collapse in">
+                    <div id="f3538a0b-c5e4-4e12-8882-8aff6d11d6df" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -156,14 +156,14 @@
               should respond with Level=Bronze, PointTarget=500 and PointNeeded=300
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8d43c2b5-64b2-460e-86f5-2143c44626d2 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">881 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f3538a0b-c5e4-4e12-8882-8aff6d11d6df > .test-code.collapse">Code</button>
+              <span class="test-duration slow">842 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309?point=200'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Level).to.eql(<span class="hljs-string">'Bronze'</span>);<br>		expect(res.body.PointTarget).to.eql(<span class="hljs-number">500</span>);<br>		expect(res.body.PointNeeded).to.eql(<span class="hljs-number">300</span>);<br>		done();<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309?point=200'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Level).to.eql(<span class="hljs-string">'Bronze'</span>);<br>		expect(res.body.PointTarget).to.eql(<span class="hljs-number">500</span>);<br>		expect(res.body.PointNeeded).to.eql(<span class="hljs-number">300</span>);<br>		done();<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -174,17 +174,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="5b576d20-4b1b-4603-86e8-5f413228d700" class="suite has-tests has-passed">
+          <div id="c33fe41c-d1dd-45b8-8007-604f62bca41b" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/members/7800764800010136955?point=400</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="5b576d20-4b1b-4603-86e8-5f413228d700" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="c33fe41c-d1dd-45b8-8007-604f62bca41b" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">773 ms</li>
+                <li class="suite-summary-item duration">1.195 s</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -192,11 +192,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#5b576d20-4b1b-4603-86e8-5f413228d700-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#c33fe41c-d1dd-45b8-8007-604f62bca41b-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="5b576d20-4b1b-4603-86e8-5f413228d700-test-list" class="list-group test-list collapse in">
-                    <div id="d1767592-21c5-4817-9cc4-26fe6021e480" class="list-group-item test passed">
+                <div id="c33fe41c-d1dd-45b8-8007-604f62bca41b-test-list" class="list-group test-list collapse in">
+                    <div id="c9b54d7e-f2b6-4a2f-9f21-c0ad9ff6ee63" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -204,14 +204,14 @@
               should respond with Level=Bronze, PointTarget=500 and PointNeeded=100
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d1767592-21c5-4817-9cc4-26fe6021e480 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">773 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c9b54d7e-f2b6-4a2f-9f21-c0ad9ff6ee63 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">1.195 s</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800010136955?point=400'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Level).to.eql(<span class="hljs-string">'Silver'</span>);<br>		expect(res.body.PointTarget).to.eql(<span class="hljs-number">500</span>);<br>		expect(res.body.PointNeeded).to.eql(<span class="hljs-number">100</span>);<br>		done();<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800010136955?point=400'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Level).to.eql(<span class="hljs-string">'Silver'</span>);<br>		expect(res.body.PointTarget).to.eql(<span class="hljs-number">500</span>);<br>		expect(res.body.PointNeeded).to.eql(<span class="hljs-number">100</span>);<br>		done();<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -222,17 +222,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="4e32ca86-9094-4ea9-99c0-acd04be05c8f" class="suite has-tests has-passed">
+          <div id="48937d64-2659-47c0-ba5f-8fc45bd9160e" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/members/7800764800000102199?point=650</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="4e32ca86-9094-4ea9-99c0-acd04be05c8f" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="48937d64-2659-47c0-ba5f-8fc45bd9160e" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">789 ms</li>
+                <li class="suite-summary-item duration">882 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -240,11 +240,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#4e32ca86-9094-4ea9-99c0-acd04be05c8f-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#48937d64-2659-47c0-ba5f-8fc45bd9160e-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="4e32ca86-9094-4ea9-99c0-acd04be05c8f-test-list" class="list-group test-list collapse in">
-                    <div id="ac63600a-29be-422a-b545-58a3f14acec0" class="list-group-item test passed">
+                <div id="48937d64-2659-47c0-ba5f-8fc45bd9160e-test-list" class="list-group test-list collapse in">
+                    <div id="ceda75d0-455e-4f76-9c42-784b115021a3" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -252,14 +252,14 @@
               should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ac63600a-29be-422a-b545-58a3f14acec0 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">789 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ceda75d0-455e-4f76-9c42-784b115021a3 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">882 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000102199?point=650'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Level).to.eql(<span class="hljs-string">'Gold'</span>);<br>		expect(res.body.PointTarget).to.eql(<span class="hljs-number">1000</span>);<br>		expect(res.body.PointNeeded).to.eql(<span class="hljs-number">350</span>);<br>		done();<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000102199?point=650'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Level).to.eql(<span class="hljs-string">'Gold'</span>);<br>		expect(res.body.PointTarget).to.eql(<span class="hljs-number">1000</span>);<br>		expect(res.body.PointNeeded).to.eql(<span class="hljs-number">350</span>);<br>		done();<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -270,17 +270,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="55b2ea32-c02e-406c-bfdb-dcb26a077a54" class="suite has-tests has-passed">
+          <div id="dc92c1cb-dd2e-4bfd-a15a-c5842e75619c" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/members/7800764800000006309?point=1000</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="55b2ea32-c02e-406c-bfdb-dcb26a077a54" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="dc92c1cb-dd2e-4bfd-a15a-c5842e75619c" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">790 ms</li>
+                <li class="suite-summary-item duration">763 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -288,11 +288,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#55b2ea32-c02e-406c-bfdb-dcb26a077a54-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#dc92c1cb-dd2e-4bfd-a15a-c5842e75619c-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="55b2ea32-c02e-406c-bfdb-dcb26a077a54-test-list" class="list-group test-list collapse in">
-                    <div id="69236a4b-3734-4024-a095-702c60661ffc" class="list-group-item test passed">
+                <div id="dc92c1cb-dd2e-4bfd-a15a-c5842e75619c-test-list" class="list-group test-list collapse in">
+                    <div id="b8f76f9d-be88-432a-97eb-42dcc60956ee" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -300,14 +300,14 @@
               should respond with 7800764800000006309&#x27;s preference 
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#69236a4b-3734-4024-a095-702c60661ffc > .test-code.collapse">Code</button>
-              <span class="test-duration slow">790 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b8f76f9d-be88-432a-97eb-42dcc60956ee > .test-code.collapse">Code</button>
+              <span class="test-duration slow">763 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309?point=1000'</span>)<br>	.set(<span class="hljs-string">'Accept-Language'</span>, <span class="hljs-string">'en'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Title).to.eql(<span class="hljs-string">'Car'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Title).to.eql(<span class="hljs-string">'Van'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Title).to.eql(<span class="hljs-string">'Fried Chicken'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Title).to.eql(<span class="hljs-string">'Sushi'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Title).to.eql(<span class="hljs-string">'Lube change &amp; garage services'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Title).to.eql(<span class="hljs-string">'Toilet'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeNumber).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Title).to.eql(<span class="hljs-string">'Mini-mart'</span>);<br>							<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Title).to.eql(<span class="hljs-string">'Gasohol 95'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Title).to.eql(<span class="hljs-string">'Gasohol E20'</span>);<br>		<br>		done();	<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309?point=1000'</span>)<br>	.set(<span class="hljs-string">'Accept-Language'</span>, <span class="hljs-string">'en'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Title).to.eql(<span class="hljs-string">'Car'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Title).to.eql(<span class="hljs-string">'Van'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Title).to.eql(<span class="hljs-string">'Fried Chicken'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Title).to.eql(<span class="hljs-string">'Sushi'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Title).to.eql(<span class="hljs-string">'Lube change &amp; garage services'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Title).to.eql(<span class="hljs-string">'Toilet'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeNumber).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Title).to.eql(<span class="hljs-string">'Mini-mart'</span>);<br>							<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Title).to.eql(<span class="hljs-string">'Gasohol 95'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Title).to.eql(<span class="hljs-string">'Gasohol E20'</span>);<br>		<br>		done();	<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -318,17 +318,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="2cd1fd04-ba26-4d2e-8c7d-c8d8991f81ef" class="suite has-tests has-passed">
+          <div id="c756ea7b-bef7-481d-9cb5-a8877fc02840" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/members/7800764800000006309?point=1000</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="2cd1fd04-ba26-4d2e-8c7d-c8d8991f81ef" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="c756ea7b-bef7-481d-9cb5-a8877fc02840" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">859 ms</li>
+                <li class="suite-summary-item duration">777 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -336,11 +336,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#2cd1fd04-ba26-4d2e-8c7d-c8d8991f81ef-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#c756ea7b-bef7-481d-9cb5-a8877fc02840-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="2cd1fd04-ba26-4d2e-8c7d-c8d8991f81ef-test-list" class="list-group test-list collapse in">
-                    <div id="7e0c7c60-9dbb-4a34-8fc0-91694ab3a00e" class="list-group-item test passed">
+                <div id="c756ea7b-bef7-481d-9cb5-a8877fc02840-test-list" class="list-group test-list collapse in">
+                    <div id="16ce591f-676f-4540-ab8e-ee297a4896d2" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -348,14 +348,14 @@
               should respond with 7800764800000006309&#x27;s preference in Thai
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7e0c7c60-9dbb-4a34-8fc0-91694ab3a00e > .test-code.collapse">Code</button>
-              <span class="test-duration slow">859 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#16ce591f-676f-4540-ab8e-ee297a4896d2 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">777 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309?point=1000'</span>)<br>	.set(<span class="hljs-string">'Accept-Language'</span>, <span class="hljs-string">'th'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Title).to.eql(<span class="hljs-string">'รถยนต์'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Title).to.eql(<span class="hljs-string">'รถตู้'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Title).to.eql(<span class="hljs-string">'ไก่ทอด'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Title).to.eql(<span class="hljs-string">'ซูชิ'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Title).to.eql(<span class="hljs-string">'บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Title).to.eql(<span class="hljs-string">'ห้องน้ำ'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeNumber).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Title).to.eql(<span class="hljs-string">'ร้านสะดวกซื้อ'</span>);<br>							<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Title).to.eql(<span class="hljs-string">'แก๊สโซฮอลล์ ๙๕'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Title).to.eql(<span class="hljs-string">'แก๊สโซฮอลล์ อี๒๐'</span>);<br>		<br>		done();	<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.get(<span class="hljs-string">'/api/members/7800764800000006309?point=1000'</span>)<br>	.set(<span class="hljs-string">'Accept-Language'</span>, <span class="hljs-string">'th'</span>)<br>	.expect(<span class="hljs-number">200</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">0</span>].Title).to.eql(<span class="hljs-string">'รถยนต์'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeID).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Description).to.eql(<span class="hljs-string">'Vehicle'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">1</span>].Title).to.eql(<span class="hljs-string">'รถตู้'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].TypeNumber).to.eql(<span class="hljs-number">1</span>);<br>		expect(res.body.Preference[<span class="hljs-number">2</span>].Title).to.eql(<span class="hljs-string">'ไก่ทอด'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeID).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Description).to.eql(<span class="hljs-string">'Food'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">3</span>].Title).to.eql(<span class="hljs-string">'ซูชิ'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">4</span>].Title).to.eql(<span class="hljs-string">'บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">5</span>].Title).to.eql(<span class="hljs-string">'ห้องน้ำ'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeID).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Description).to.eql(<span class="hljs-string">'Facility'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].TypeNumber).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">6</span>].Title).to.eql(<span class="hljs-string">'ร้านสะดวกซื้อ'</span>);<br>							<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].TypeNumber).to.eql(<span class="hljs-number">2</span>);<br>		expect(res.body.Preference[<span class="hljs-number">7</span>].Title).to.eql(<span class="hljs-string">'แก๊สโซฮอลล์ ๙๕'</span>);<br>		<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeID).to.eql(<span class="hljs-number">4</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Description).to.eql(<span class="hljs-string">'Fuel'</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].TypeNumber).to.eql(<span class="hljs-number">3</span>);<br>		expect(res.body.Preference[<span class="hljs-number">8</span>].Title).to.eql(<span class="hljs-string">'แก๊สโซฮอลล์ อี๒๐'</span>);<br>		<br>		done();	<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -366,17 +366,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="aa22d761-fd8d-4659-9245-5b3b0d100d61" class="suite has-tests has-passed">
+          <div id="30717bbf-75bc-409c-a198-14fab9ada0e0" class="suite has-tests has-passed">
             <h3 class="suite-title">POST /api/members/1</h3>
             <h5 class="suite-filename">\test\members.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="aa22d761-fd8d-4659-9245-5b3b0d100d61" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="30717bbf-75bc-409c-a198-14fab9ada0e0" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">1.259 s</li>
+                <li class="suite-summary-item duration">839 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -384,11 +384,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#aa22d761-fd8d-4659-9245-5b3b0d100d61-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#30717bbf-75bc-409c-a198-14fab9ada0e0-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="aa22d761-fd8d-4659-9245-5b3b0d100d61-test-list" class="list-group test-list collapse in">
-                    <div id="eef688db-f129-466e-8826-a5a6e8be981e" class="list-group-item test passed">
+                <div id="30717bbf-75bc-409c-a198-14fab9ada0e0-test-list" class="list-group test-list collapse in">
+                    <div id="582dcd04-54a7-478d-978e-b0bf07964030" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -396,14 +396,14 @@
               should update preference of MemberID=1
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#eef688db-f129-466e-8826-a5a6e8be981e > .test-code.collapse">Code</button>
-              <span class="test-duration slow">1.259 s</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#582dcd04-54a7-478d-978e-b0bf07964030 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">839 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small">request(app)<br>	.post(<span class="hljs-string">'/api/members/1'</span>)<br>	.send({<br>		<span class="hljs-string">"Preference"</span>: [<br>			{ <span class="hljs-string">"TypeID"</span>: <span class="hljs-number">1</span>, <span class="hljs-string">"TypeNumber"</span>: <span class="hljs-number">1</span> },<br>			{ <span class="hljs-string">"TypeID"</span>: <span class="hljs-number">1</span>, <span class="hljs-string">"TypeNumber"</span>: <span class="hljs-number">2</span> }<br>		]<br>	})<br>	.expect(<span class="hljs-number">302</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		done();<br>	});</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">10000</span>);<br>request(app)<br>	.post(<span class="hljs-string">'/api/members/1'</span>)<br>	.send({<br>		<span class="hljs-string">"Preference"</span>: [<br>			{ <span class="hljs-string">"TypeID"</span>: <span class="hljs-number">1</span>, <span class="hljs-string">"TypeNumber"</span>: <span class="hljs-number">1</span> },<br>			{ <span class="hljs-string">"TypeID"</span>: <span class="hljs-number">1</span>, <span class="hljs-string">"TypeNumber"</span>: <span class="hljs-number">2</span> }<br>		]<br>	})<br>	.expect(<span class="hljs-number">302</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, res</span>) </span>{<br>		<span class="hljs-keyword">if</span> (err) {<br>			<span class="hljs-keyword">return</span> done(err);<br>		}<br>		done();<br>	});</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -417,22 +417,22 @@
           </div>
         </section>
             <section class="suite-wrap">
-          <div id="dfd45106-c0e5-498b-87a1-c69818cd1c5d" class="suite has-suites">
+          <div id="212f43f0-ad24-4bce-9d48-693275a85a9b" class="suite has-suites">
             <h3 class="suite-title">Price Endpoint</h3>
             <h5 class="suite-filename">\test\prices.js</h5>
         
               <section class="suite-wrap">
-          <div id="f3ff94c7-9d3b-4e98-8981-a3e9d607c7c1" class="suite has-tests has-passed">
+          <div id="d34d25af-6f8e-467e-a9ac-c0f6266e0a9b" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/prices</h3>
             <h5 class="suite-filename">\test\prices.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="f3ff94c7-9d3b-4e98-8981-a3e9d607c7c1" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="d34d25af-6f8e-467e-a9ac-c0f6266e0a9b" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">381 ms</li>
+                <li class="suite-summary-item duration">372 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -440,11 +440,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#f3ff94c7-9d3b-4e98-8981-a3e9d607c7c1-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d34d25af-6f8e-467e-a9ac-c0f6266e0a9b-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="f3ff94c7-9d3b-4e98-8981-a3e9d607c7c1-test-list" class="list-group test-list collapse in">
-                    <div id="b4d03eef-cad5-42d1-9b17-9e8f31fb005d" class="list-group-item test passed">
+                <div id="d34d25af-6f8e-467e-a9ac-c0f6266e0a9b-test-list" class="list-group test-list collapse in">
+                    <div id="ec5f1bca-b969-47ab-902a-929df3fbbe66" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -452,8 +452,8 @@
               should respond with the list of fuel prices
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b4d03eef-cad5-42d1-9b17-9e8f31fb005d > .test-code.collapse">Code</button>
-              <span class="test-duration slow">381 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ec5f1bca-b969-47ab-902a-929df3fbbe66 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">372 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
@@ -473,22 +473,22 @@
           </div>
         </section>
             <section class="suite-wrap">
-          <div id="a306ac57-251f-428b-885d-959cd23896e7" class="suite has-suites">
+          <div id="42d43c07-f702-4a4f-98a9-dd3565623279" class="suite has-suites">
             <h3 class="suite-title">Promotions Endpoint</h3>
             <h5 class="suite-filename">\test\promotions.js</h5>
         
               <section class="suite-wrap">
-          <div id="ac0c506c-319f-427c-a00e-3fc5b627fcc1" class="suite has-tests has-passed">
+          <div id="ca9cac34-b0bd-4968-b3df-ae5d199e817b" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/promotions</h3>
             <h5 class="suite-filename">\test\promotions.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="ac0c506c-319f-427c-a00e-3fc5b627fcc1" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="ca9cac34-b0bd-4968-b3df-ae5d199e817b" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">359 ms</li>
+                <li class="suite-summary-item duration">370 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -496,11 +496,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#ac0c506c-319f-427c-a00e-3fc5b627fcc1-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#ca9cac34-b0bd-4968-b3df-ae5d199e817b-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="ac0c506c-319f-427c-a00e-3fc5b627fcc1-test-list" class="list-group test-list collapse in">
-                    <div id="a663a7c4-3d7f-4848-bd86-c40b1cbdc3a3" class="list-group-item test passed">
+                <div id="ca9cac34-b0bd-4968-b3df-ae5d199e817b-test-list" class="list-group test-list collapse in">
+                    <div id="3cb24cf3-c3bf-4667-aa8f-5c434a81e9be" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -508,8 +508,8 @@
               should respond with json
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a663a7c4-3d7f-4848-bd86-c40b1cbdc3a3 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">359 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#3cb24cf3-c3bf-4667-aa8f-5c434a81e9be > .test-code.collapse">Code</button>
+              <span class="test-duration slow">370 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
@@ -529,17 +529,17 @@
           </div>
         </section>
             <section class="suite-wrap">
-          <div id="7526de83-b28e-4d7e-80aa-e8aaea78c148" class="suite has-suites">
+          <div id="4a6376a2-01a3-4745-8801-589e0f999e05" class="suite has-suites">
             <h3 class="suite-title">Users Endpoint</h3>
             <h5 class="suite-filename">\test\sql-helper.js</h5>
         
               <section class="suite-wrap">
-          <div id="0235f3c7-a99a-428a-bcd1-ac1db2f3b305" class="suite has-tests has-passed">
+          <div id="3b5f6d49-cd29-41ad-98bd-8b266df6dd8c" class="suite has-tests has-passed">
             <h3 class="suite-title">Test sql-helper</h3>
             <h5 class="suite-filename">\test\sql-helper.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="0235f3c7-a99a-428a-bcd1-ac1db2f3b305" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="3b5f6d49-cd29-41ad-98bd-8b266df6dd8c" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
@@ -552,11 +552,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#0235f3c7-a99a-428a-bcd1-ac1db2f3b305-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#3b5f6d49-cd29-41ad-98bd-8b266df6dd8c-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="0235f3c7-a99a-428a-bcd1-ac1db2f3b305-test-list" class="list-group test-list collapse in">
-                    <div id="4f31665b-db16-49f5-9ee8-7962992aa759" class="list-group-item test passed">
+                <div id="3b5f6d49-cd29-41ad-98bd-8b266df6dd8c-test-list" class="list-group test-list collapse in">
+                    <div id="ff9bde1c-f558-4356-9040-8da1f031a70a" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -564,7 +564,7 @@
               should respond with sql string
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4f31665b-db16-49f5-9ee8-7962992aa759 > .test-code.collapse">Code</button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ff9bde1c-f558-4356-9040-8da1f031a70a > .test-code.collapse">Code</button>
               <span class="test-duration fast">0 ms</span>
             </div>
           </div>
@@ -585,22 +585,22 @@
           </div>
         </section>
             <section class="suite-wrap">
-          <div id="bb8aa754-129b-4eb2-a948-5b75a989e8c0" class="suite has-suites">
+          <div id="375d6224-9d0a-4eac-b4f6-d244865cdfa1" class="suite has-suites">
             <h3 class="suite-title">Static Endpoint</h3>
             <h5 class="suite-filename">\test\statics.js</h5>
         
               <section class="suite-wrap">
-          <div id="22a83aa4-d4ec-4115-bdea-8ffe0fb968ac" class="suite has-tests has-passed">
+          <div id="1550134e-3674-4179-8bd1-848053a1d0fd" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/statics/vehicles</h3>
             <h5 class="suite-filename">\test\statics.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="22a83aa4-d4ec-4115-bdea-8ffe0fb968ac" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="1550134e-3674-4179-8bd1-848053a1d0fd" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">356 ms</li>
+                <li class="suite-summary-item duration">363 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -608,11 +608,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#22a83aa4-d4ec-4115-bdea-8ffe0fb968ac-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#1550134e-3674-4179-8bd1-848053a1d0fd-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="22a83aa4-d4ec-4115-bdea-8ffe0fb968ac-test-list" class="list-group test-list collapse in">
-                    <div id="e29b560e-0f6d-4155-8adf-b844b4413769" class="list-group-item test passed">
+                <div id="1550134e-3674-4179-8bd1-848053a1d0fd-test-list" class="list-group test-list collapse in">
+                    <div id="d097a42f-9b85-4678-932f-6412b2f4b060" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -620,8 +620,8 @@
               should respond with the list of vehicles
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#e29b560e-0f6d-4155-8adf-b844b4413769 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">356 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d097a42f-9b85-4678-932f-6412b2f4b060 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">363 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
@@ -638,17 +638,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="f2cc7b0e-5a1d-42ed-a291-396c72ca82c0" class="suite has-tests has-passed">
+          <div id="603c530d-5cf2-46a8-b30e-400b87cf98b1" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/statics/foods</h3>
             <h5 class="suite-filename">\test\statics.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="f2cc7b0e-5a1d-42ed-a291-396c72ca82c0" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="603c530d-5cf2-46a8-b30e-400b87cf98b1" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">364 ms</li>
+                <li class="suite-summary-item duration">383 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -656,11 +656,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#f2cc7b0e-5a1d-42ed-a291-396c72ca82c0-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#603c530d-5cf2-46a8-b30e-400b87cf98b1-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="f2cc7b0e-5a1d-42ed-a291-396c72ca82c0-test-list" class="list-group test-list collapse in">
-                    <div id="7c3fb10a-e173-490f-a0d8-e487a063b67a" class="list-group-item test passed">
+                <div id="603c530d-5cf2-46a8-b30e-400b87cf98b1-test-list" class="list-group test-list collapse in">
+                    <div id="8463ffbe-6c74-4773-8b0f-88d721c4ae10" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -668,8 +668,8 @@
               should respond with the list of foods
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7c3fb10a-e173-490f-a0d8-e487a063b67a > .test-code.collapse">Code</button>
-              <span class="test-duration slow">364 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8463ffbe-6c74-4773-8b0f-88d721c4ae10 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">383 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
@@ -686,17 +686,17 @@
           </div>
         </section>
               <section class="suite-wrap">
-          <div id="2c77973b-8ccc-4ed9-9534-9c9d7926ae91" class="suite has-tests has-passed">
+          <div id="74783f9a-862a-4c87-b628-c08c9bc0d682" class="suite has-tests has-passed">
             <h3 class="suite-title">GET /api/statics/facilities</h3>
             <h5 class="suite-filename">\test\statics.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="2c77973b-8ccc-4ed9-9534-9c9d7926ae91" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="74783f9a-862a-4c87-b628-c08c9bc0d682" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">367 ms</li>
+                <li class="suite-summary-item duration">376 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">1</li>
                 <li class="suite-summary-item failed">0</li>
@@ -704,11 +704,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#2c77973b-8ccc-4ed9-9534-9c9d7926ae91-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#74783f9a-862a-4c87-b628-c08c9bc0d682-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="2c77973b-8ccc-4ed9-9534-9c9d7926ae91-test-list" class="list-group test-list collapse in">
-                    <div id="19e4a3c7-5bdd-46bd-b4db-2c94de872075" class="list-group-item test passed">
+                <div id="74783f9a-862a-4c87-b628-c08c9bc0d682-test-list" class="list-group test-list collapse in">
+                    <div id="5fce116f-620c-46a2-947a-7ad34a90ede6" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -716,8 +716,8 @@
               should respond with the list of facilities
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#19e4a3c7-5bdd-46bd-b4db-2c94de872075 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">367 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#5fce116f-620c-46a2-947a-7ad34a90ede6 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">376 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
@@ -737,22 +737,22 @@
           </div>
         </section>
             <section class="suite-wrap">
-          <div id="1766b621-1f0b-4a01-8113-7311fb0985e8" class="suite has-suites">
+          <div id="28e2ddbc-f14c-4388-ae39-f6ce31cbd127" class="suite has-suites">
             <h3 class="suite-title">Stations Endpoint</h3>
             <h5 class="suite-filename">\test\stations.js</h5>
         
               <section class="suite-wrap">
-          <div id="0bfb9ed3-b20d-43c2-b167-459a8903fb35" class="suite has-tests has-failed">
+          <div id="ec103214-14ec-432e-aab4-f821e9e99c4b" class="suite has-tests has-failed">
             <h3 class="suite-title">GET /api/stations</h3>
             <h5 class="suite-filename">\test\stations.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="0bfb9ed3-b20d-43c2-b167-459a8903fb35" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="1" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="ec103214-14ec-432e-aab4-f821e9e99c4b" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="1" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">368 ms</li>
+                <li class="suite-summary-item duration">591 ms</li>
                 <li class="suite-summary-item tests">1</li>
                 <li class="suite-summary-item passed">0</li>
                 <li class="suite-summary-item failed">1</li>
@@ -760,11 +760,11 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#0bfb9ed3-b20d-43c2-b167-459a8903fb35-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#ec103214-14ec-432e-aab4-f821e9e99c4b-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="0bfb9ed3-b20d-43c2-b167-459a8903fb35-test-list" class="list-group test-list collapse in">
-                    <div id="9ff765ab-c3b1-4279-9f95-518ede759a72" class="list-group-item test failed">
+                <div id="ec103214-14ec-432e-aab4-f821e9e99c4b-test-list" class="list-group test-list collapse in">
+                    <div id="16addee9-3735-4ee8-8135-f2c3a78d6d7f" class="list-group-item test failed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
@@ -772,13 +772,13 @@
               should respond with json
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#9ff765ab-c3b1-4279-9f95-518ede759a72 > .test-code.collapse">Code</button>
-              <span class="test-duration ">368 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#16addee9-3735-4ee8-8135-f2c3a78d6d7f > .test-code.collapse">Code</button>
+              <span class="test-duration ">591 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
             <p class="test-error-message">Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
-              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#9ff765ab-c3b1-4279-9f95-518ede759a72 > .test-error-stack.collapse">Stack</button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#16addee9-3735-4ee8-8135-f2c3a78d6d7f > .test-error-stack.collapse">Stack</button>
             </p>
           <!-- Test Code -->
           <div class="test-code collapse">
@@ -813,90 +813,90 @@
         <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
         <ul class="list-unstyled main-menu">
                 <li class="nav-menu-item">
-                <a href="#3ba5e7c6-953a-4ece-88d3-f66a28477a3c" class="nav-menu-item-link">Members Endpoint</a>
+                <a href="#08fe8713-f7c1-4158-b503-0beab80262ed" class="nav-menu-item-link">Members Endpoint</a>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#10b5fbfa-24a0-4bc6-b059-b48906c1814d" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309</a>
+                <a href="#0f5a36b6-ae41-46b7-98ea-2dace92a7352" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309</a>
             </li>
                   </ul>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#f406f532-072b-4d5d-b244-024da02c8e0a" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309?point=200</a>
+                <a href="#06f3e138-56e6-4595-81af-0fd54bef6af5" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309?point=200</a>
             </li>
                   </ul>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#5b576d20-4b1b-4603-86e8-5f413228d700" class="nav-menu-item-link has-passes">GET /api/members/7800764800010136955?point=400</a>
+                <a href="#c33fe41c-d1dd-45b8-8007-604f62bca41b" class="nav-menu-item-link has-passes">GET /api/members/7800764800010136955?point=400</a>
             </li>
                   </ul>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#4e32ca86-9094-4ea9-99c0-acd04be05c8f" class="nav-menu-item-link has-passes">GET /api/members/7800764800000102199?point=650</a>
+                <a href="#48937d64-2659-47c0-ba5f-8fc45bd9160e" class="nav-menu-item-link has-passes">GET /api/members/7800764800000102199?point=650</a>
             </li>
                   </ul>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#55b2ea32-c02e-406c-bfdb-dcb26a077a54" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309?point=1000</a>
+                <a href="#dc92c1cb-dd2e-4bfd-a15a-c5842e75619c" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309?point=1000</a>
             </li>
                   </ul>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#2cd1fd04-ba26-4d2e-8c7d-c8d8991f81ef" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309?point=1000</a>
+                <a href="#c756ea7b-bef7-481d-9cb5-a8877fc02840" class="nav-menu-item-link has-passes">GET /api/members/7800764800000006309?point=1000</a>
             </li>
                   </ul>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#aa22d761-fd8d-4659-9245-5b3b0d100d61" class="nav-menu-item-link has-passes">POST /api/members/1</a>
-            </li>
-                  </ul>
-            </li>
-                <li class="nav-menu-item">
-                <a href="#dfd45106-c0e5-498b-87a1-c69818cd1c5d" class="nav-menu-item-link">Price Endpoint</a>
-                  <ul class="list-unstyled sub-menu">
-                    <li class="nav-menu-item">
-                <a href="#f3ff94c7-9d3b-4e98-8981-a3e9d607c7c1" class="nav-menu-item-link has-passes">GET /api/prices</a>
+                <a href="#30717bbf-75bc-409c-a198-14fab9ada0e0" class="nav-menu-item-link has-passes">POST /api/members/1</a>
             </li>
                   </ul>
             </li>
                 <li class="nav-menu-item">
-                <a href="#a306ac57-251f-428b-885d-959cd23896e7" class="nav-menu-item-link">Promotions Endpoint</a>
+                <a href="#212f43f0-ad24-4bce-9d48-693275a85a9b" class="nav-menu-item-link">Price Endpoint</a>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#ac0c506c-319f-427c-a00e-3fc5b627fcc1" class="nav-menu-item-link has-passes">GET /api/promotions</a>
+                <a href="#d34d25af-6f8e-467e-a9ac-c0f6266e0a9b" class="nav-menu-item-link has-passes">GET /api/prices</a>
             </li>
                   </ul>
             </li>
                 <li class="nav-menu-item">
-                <a href="#7526de83-b28e-4d7e-80aa-e8aaea78c148" class="nav-menu-item-link">Users Endpoint</a>
+                <a href="#42d43c07-f702-4a4f-98a9-dd3565623279" class="nav-menu-item-link">Promotions Endpoint</a>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#0235f3c7-a99a-428a-bcd1-ac1db2f3b305" class="nav-menu-item-link has-passes">Test sql-helper</a>
+                <a href="#ca9cac34-b0bd-4968-b3df-ae5d199e817b" class="nav-menu-item-link has-passes">GET /api/promotions</a>
             </li>
                   </ul>
             </li>
                 <li class="nav-menu-item">
-                <a href="#bb8aa754-129b-4eb2-a948-5b75a989e8c0" class="nav-menu-item-link">Static Endpoint</a>
+                <a href="#4a6376a2-01a3-4745-8801-589e0f999e05" class="nav-menu-item-link">Users Endpoint</a>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#22a83aa4-d4ec-4115-bdea-8ffe0fb968ac" class="nav-menu-item-link has-passes">GET /api/statics/vehicles</a>
-            </li>
-                  </ul>
-                  <ul class="list-unstyled sub-menu">
-                    <li class="nav-menu-item">
-                <a href="#f2cc7b0e-5a1d-42ed-a291-396c72ca82c0" class="nav-menu-item-link has-passes">GET /api/statics/foods</a>
-            </li>
-                  </ul>
-                  <ul class="list-unstyled sub-menu">
-                    <li class="nav-menu-item">
-                <a href="#2c77973b-8ccc-4ed9-9534-9c9d7926ae91" class="nav-menu-item-link has-passes">GET /api/statics/facilities</a>
+                <a href="#3b5f6d49-cd29-41ad-98bd-8b266df6dd8c" class="nav-menu-item-link has-passes">Test sql-helper</a>
             </li>
                   </ul>
             </li>
                 <li class="nav-menu-item">
-                <a href="#1766b621-1f0b-4a01-8113-7311fb0985e8" class="nav-menu-item-link">Stations Endpoint</a>
+                <a href="#375d6224-9d0a-4eac-b4f6-d244865cdfa1" class="nav-menu-item-link">Static Endpoint</a>
                   <ul class="list-unstyled sub-menu">
                     <li class="nav-menu-item">
-                <a href="#0bfb9ed3-b20d-43c2-b167-459a8903fb35" class="nav-menu-item-link has-failures">GET /api/stations</a>
+                <a href="#1550134e-3674-4179-8bd1-848053a1d0fd" class="nav-menu-item-link has-passes">GET /api/statics/vehicles</a>
+            </li>
+                  </ul>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#603c530d-5cf2-46a8-b30e-400b87cf98b1" class="nav-menu-item-link has-passes">GET /api/statics/foods</a>
+            </li>
+                  </ul>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#74783f9a-862a-4c87-b628-c08c9bc0d682" class="nav-menu-item-link has-passes">GET /api/statics/facilities</a>
+            </li>
+                  </ul>
+            </li>
+                <li class="nav-menu-item">
+                <a href="#28e2ddbc-f14c-4388-ae39-f6ce31cbd127" class="nav-menu-item-link">Stations Endpoint</a>
+                  <ul class="list-unstyled sub-menu">
+                    <li class="nav-menu-item">
+                <a href="#ec103214-14ec-432e-aab4-f821e9e99c4b" class="nav-menu-item-link has-failures">GET /api/stations</a>
             </li>
                   </ul>
             </li>
