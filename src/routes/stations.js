@@ -20,6 +20,7 @@ router.get('/', function(req, res) {
  * @api {get} /api/stations/nearbyStations/:lat,:long Request nearby stations
  * @apiName GetNearbyStations
  * @apiGroup Station
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  *
  * @apiParam {String} lat Latitude of the current Location.
  * @apiParam {String} long Longitude of the current Location
@@ -51,8 +52,9 @@ router.get('/nearbyStations/:lat,:long', function (req, res) {
 
 /**
  * @api {get} /api/stations/getByKeyword/:keyword,:lang Request stations by keyword
- * @apiName GetStaionsByKeyword
+ * @apiName GetStationsByKeyword
  * @apiGroup Station
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  * 
  * @apiParam {String} lat Latitude of the current Location.
  * @apiParam {String} long Longitude of the current Location
@@ -87,9 +89,10 @@ router.get('/getByKeyword/:lat,:long,:keyword', function (req, res) {
 });
 
 /**
- * @api {get} /api/stations/getStationServicesById/:id Request stations by keyword
- * @apiName GetStationsByKeyword
+ * @api {get} /api/stations/getStationServicesById/:id Request services of one station
+ * @apiName GetStationServices
  * @apiGroup Station
+ * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  * 
  * @apiParam {String} Id Id of the station
  *
