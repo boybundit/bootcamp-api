@@ -3,16 +3,7 @@ var router  = express.Router();
 var db = require('../database');
 var staticsRouter = require('../routes/statics');
 var sqlHelper = require('../lib/sql-helper');
-
-var getRequestLanguage = function(req) {
-	var acceptLanguage = require('accept-language');
-	acceptLanguage.languages(['en-US', 'th-TH']);
-	var language = req.get('Accept-Language');
-	language = acceptLanguage.get(language);
-	language = language.substring(0, 2);
-	//console.log(language);
-	return language;
-}
+var langHelper = require('../lib/lang-helper');
 
 /**
  * @api {get} /api/prices Get prices of all fuel types
@@ -26,7 +17,8 @@ var getRequestLanguage = function(req) {
  * @apiSuccess {Float} fuelPrices.Price Current price of fuel type
  */
 router.get('/', function(req, res) {
-  var language = getRequestLanguage(req);
+  console.log(langHelper);
+  var language = langHelper.getRequestedLanguage(req);
   db.sql(sqlHelper.conv_i18n('SELECT FP.ID, FP.Price, S.Title[_lang] from FuelPrice FP join Static S on FP.ID = S.TypeNumber where S.TypeID = ' + staticsRouter.FUEL_TYPE + ';', language))
   .execute()
   .then(function (results) {
