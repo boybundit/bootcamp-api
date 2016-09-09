@@ -97,7 +97,7 @@ router.get('/getByKeyword/:lat,:long,:keyword', function (req, res) {
  * @apiGroup Station
  * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  * 
- * @apiParam {String} Id Id of the station
+ * @apiParam {String} id Id of the station
  *
  * @apiSuccess {Id} Id Id of the station.
  * @apiSuccess {Object[]} Services Services provided in the station
