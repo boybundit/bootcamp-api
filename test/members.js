@@ -8,10 +8,6 @@ var request = require('supertest');
 
 var app = require('../src/app.js');
 
-var member1 = '7800764800000006309';
-var member2 = '7800764800010136955';
-var member3 = '7800764800000102199';
-	
 describe('Members Endpoint', function () {
 	//1. Test Member 7800764800000006309 
 	describe('GET /api/members/7800764800000006309', function () {
@@ -79,11 +75,12 @@ describe('Members Endpoint', function () {
 				});
 		});
 	});
-	//5. Test Preference Case1: Preference for 7800764800000006309
+	//5. Test Preference Case1: Preference for 7800764800000006309 en
 	describe('GET /api/members/7800764800000006309?point=1000', function () {
 		it('should respond with 7800764800000006309\'s preference ', function (done) {
 			request(app)
 				.get('/api/members/7800764800000006309?point=1000')
+				.set('Accept-Language', 'en')
 				.expect(200)
 				.end(function (err, res) {
 					if (err) {
@@ -128,6 +125,71 @@ describe('Members Endpoint', function () {
 					expect(res.body.Preference[7].Description).to.eql('Fuel');
 					expect(res.body.Preference[7].TypeNumber).to.eql(2);
 					expect(res.body.Preference[7].Title).to.eql('Gasohol 95');
+					
+					expect(res.body.Preference[8].TypeID).to.eql(4);
+					expect(res.body.Preference[8].Description).to.eql('Fuel');
+					expect(res.body.Preference[8].TypeNumber).to.eql(3);
+					expect(res.body.Preference[8].Title).to.eql('Gasohol E20');
+					
+					done();	
+				});
+		});
+	});
+	//6. Test Preference Case2: Preference for 7800764800000006309 TH
+	describe('GET /api/members/7800764800000006309?point=1000', function () {
+		it('should respond with 7800764800000006309\'s preference in Thai', function (done) {
+			request(app)
+				.get('/api/members/7800764800000006309?point=1000')
+				.set('Accept-Language', 'th')
+				.expect(200)
+				.end(function (err, res) {
+					if (err) {
+						return done(err);
+					}
+					expect(res.body.Preference[0].TypeID).to.eql(1);
+					expect(res.body.Preference[0].Description).to.eql('Vehicle');
+					expect(res.body.Preference[0].TypeNumber).to.eql(1);
+					expect(res.body.Preference[0].Title).to.eql('รถยนต์');
+					
+					expect(res.body.Preference[1].TypeID).to.eql(1);
+					expect(res.body.Preference[1].Description).to.eql('Vehicle');
+					expect(res.body.Preference[1].TypeNumber).to.eql(2);
+					expect(res.body.Preference[1].Title).to.eql('รถตู้');
+					
+					expect(res.body.Preference[2].TypeID).to.eql(2);
+					expect(res.body.Preference[2].Description).to.eql('Food');
+					expect(res.body.Preference[2].TypeNumber).to.eql(1);
+					expect(res.body.Preference[2].Title).to.eql('ไก่ทอด');
+					
+					expect(res.body.Preference[3].TypeID).to.eql(2);
+					expect(res.body.Preference[3].Description).to.eql('Food');
+					expect(res.body.Preference[3].TypeNumber).to.eql(2);
+					expect(res.body.Preference[3].Title).to.eql('ซูชิ');
+					
+					expect(res.body.Preference[4].TypeID).to.eql(3);
+					expect(res.body.Preference[4].Description).to.eql('Facility');
+					expect(res.body.Preference[4].TypeNumber).to.eql(2);
+					expect(res.body.Preference[4].Title).to.eql('บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ');
+					
+					expect(res.body.Preference[5].TypeID).to.eql(3);
+					expect(res.body.Preference[5].Description).to.eql('Facility');
+					expect(res.body.Preference[5].TypeNumber).to.eql(3);
+					expect(res.body.Preference[5].Title).to.eql('ห้องน้ำ');
+					
+					expect(res.body.Preference[6].TypeID).to.eql(3);
+					expect(res.body.Preference[6].Description).to.eql('Facility');
+					expect(res.body.Preference[6].TypeNumber).to.eql(4);
+					expect(res.body.Preference[6].Title).to.eql('ร้านสะดวกซื้อ');
+										
+					expect(res.body.Preference[7].TypeID).to.eql(4);
+					expect(res.body.Preference[7].Description).to.eql('Fuel');
+					expect(res.body.Preference[7].TypeNumber).to.eql(2);
+					expect(res.body.Preference[7].Title).to.eql('แก๊สโซฮอลล์ ๙๕');
+					
+					expect(res.body.Preference[8].TypeID).to.eql(4);
+					expect(res.body.Preference[8].Description).to.eql('Fuel');
+					expect(res.body.Preference[8].TypeNumber).to.eql(3);
+					expect(res.body.Preference[8].Title).to.eql('แก๊สโซฮอลล์ อี๒๐');
 					
 					done();	
 				});
