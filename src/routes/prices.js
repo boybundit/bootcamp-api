@@ -17,7 +17,6 @@ var langHelper = require('../lib/lang-helper');
  * @apiSuccess {Float} fuelPrices.Price Current price of fuel type
  */
 router.get('/', function(req, res) {
-  console.log(langHelper);
   var language = langHelper.getRequestedLanguage(req);
   db.sql(sqlHelper.conv_i18n('SELECT FP.ID, FP.Price, S.Title[_lang] from FuelPrice FP join Static S on FP.ID = S.TypeNumber where S.TypeID = ' + staticsRouter.FUEL_TYPE + ';', language))
   .execute()
