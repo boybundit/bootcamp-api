@@ -22,8 +22,8 @@ router.get('/', function(req, res) {
  * @apiGroup Station
  * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  *
- * @apiParam {String} lat Latitude of the current Location.
- * @apiParam {String} long Longitude of the current Location
+ * @apiParam {Number} lat Latitude of the current Location.
+ * @apiParam {Number} long Longitude of the current Location
  *
  * @apiSuccess {String} Id Unique Id of the station.
  * @apiSuccess {String} Address Address of the station.
@@ -44,6 +44,7 @@ router.get('/nearbyStations/:lat,:long', function (req, res) {
 		.parameter('long', TYPES.Numeric, req.params.long,{precision:'9',scale:'6'})
 		.execute()
 		.then(function (results) {
+			//console.log(language);
 			return res.json(results);
 		}).fail(function (err) {
 			return res.status(404).json(err);
@@ -51,17 +52,17 @@ router.get('/nearbyStations/:lat,:long', function (req, res) {
 });
 
 /**
- * @api {get} /api/stations/getByKeyword/:keyword,:lang Request stations by keyword
+ * @api {get} /api/stations/getByKeyword/:lat,:long,:keyword Request stations by keyword
  * @apiName GetStationsByKeyword
  * @apiGroup Station
  * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  * 
- * @apiParam {String} lat Latitude of the current Location.
- * @apiParam {String} long Longitude of the current Location
+ * @apiParam {Number} lat Latitude of the current Location.
+ * @apiParam {Number} long Longitude of the current Location
  * @apiParam {String} keyword Keyword used to search for the stations
  *
  * @apiSuccess {String} Id Unique Id of the station.
- * @apiSuccess {String} Address Address of the station.
+ * @apiSuccess {String} AddressLine Address of the station.
  * @apiSuccess {String} City City (province) of the station.
  * @apiSuccess {String} Country Country of the station.
  * @apiSuccess {String} DisplayName Name of the station.
@@ -72,16 +73,18 @@ router.get('/nearbyStations/:lat,:long', function (req, res) {
  */
 router.get('/getByKeyword/:lat,:long,:keyword', function (req, res) {
 	var language = langHelper.getRequestedLanguage(req);
-	db.sql(conv_i18n('Select Id, AddressLine[_lang], City[_lang], Country, DisplayName[_lang], PostalCode, Latitude, Longitude, (geography::Point( @lat, @long, 4326)).STDistance(st.Location) Distance',language) +
+	//console.log(language);
+	db.sql(conv_i18n('Select Id, AddressLine[_lang], City[_lang], Country, DisplayName[_lang], PostalCode, Latitude, Longitude, (geography::Point( @lat, @long, 4326)).STDistance(st.Location) Distance', language) +
 	 " FROM ServiceStation st\
-	 WHERE DisplayName_"+ req.params.lang +" LIKE ('%'+@keyword+'%')\
-	 	OR City_"+ req.params.lang +" LIKE ('%'+@keyword+'%')\
-		 OR AddressLine_"+ req.params.lang +" LIKE ('%'+@keyword+'%')")
+	 WHERE DisplayName_"+ language +" LIKE ('%'+@keyword+'%')\
+	 	OR City_"+ language +" LIKE ('%'+@keyword+'%')\
+		 OR AddressLine_"+ language +" LIKE ('%'+@keyword+'%')")
 		.parameter('lat', TYPES.Numeric, req.params.lat,{precision:'9',scale:'6'})
 		.parameter('long', TYPES.Numeric, req.params.long,{precision:'9',scale:'6'})
 	 	.parameter('keyword', TYPES.NChar, req.params.keyword)
 		.execute()
 		.then(function (results) {
+			
 			return res.json(results);
 		}).fail(function (err) {
 			return res.status(404).json(err);
@@ -94,7 +97,7 @@ router.get('/getByKeyword/:lat,:long,:keyword', function (req, res) {
  * @apiGroup Station
  * @apiHeader {String} Accept-Language Prefered languages. (Accept-Language: th)
  * 
- * @apiParam {String} Id Id of the station
+ * @apiParam {String} id Id of the station
  *
  * @apiSuccess {Id} Id Id of the station.
  * @apiSuccess {Object[]} Services Services provided in the station
