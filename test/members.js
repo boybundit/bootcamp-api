@@ -12,6 +12,7 @@ describe('Members Endpoint', function () {
 	//1. Test Member 7800764800000006309 
 	describe('GET /api/members/7800764800000006309', function () {
 		it('should respond with MemberID=7800764800000006309', function (done) {
+			this.timeout(10000);
 			request(app)
 				.get('/api/members/7800764800000006309')
 				.expect(200)
@@ -27,6 +28,7 @@ describe('Members Endpoint', function () {
 	//2. Test MemberLevel case1: 200 using 7800764800000006309
 	describe('GET /api/members/7800764800000006309?point=200', function () {
 		it('should respond with Level=Bronze, PointTarget=500 and PointNeeded=300', function (done) {
+			this.timeout(10000);
 			request(app)
 				.get('/api/members/7800764800000006309?point=200')
 				.expect(200)
@@ -44,6 +46,7 @@ describe('Members Endpoint', function () {
 	//3. Test MemberLevel case2: 400 using 7800764800010136955
 	describe('GET /api/members/7800764800010136955?point=400', function () {
 		it('should respond with Level=Bronze, PointTarget=500 and PointNeeded=100', function (done) {
+			this.timeout(10000);
 			request(app)
 				.get('/api/members/7800764800010136955?point=400')
 				.expect(200)
@@ -61,6 +64,7 @@ describe('Members Endpoint', function () {
 	//4. Test MemberLevel case2: 650 using 7800764800000102199
 	describe('GET /api/members/7800764800000102199?point=650', function () {
 		it('should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350', function (done) {
+			this.timeout(10000);
 			request(app)
 				.get('/api/members/7800764800000102199?point=650')
 				.expect(200)
@@ -78,6 +82,7 @@ describe('Members Endpoint', function () {
 	//5. Test Preference Case1: Preference for 7800764800000006309 en
 	describe('GET /api/members/7800764800000006309?point=1000', function () {
 		it('should respond with 7800764800000006309\'s preference ', function (done) {
+			this.timeout(10000);
 			request(app)
 				.get('/api/members/7800764800000006309?point=1000')
 				.set('Accept-Language', 'en')
@@ -138,6 +143,7 @@ describe('Members Endpoint', function () {
 	//6. Test Preference Case2: Preference for 7800764800000006309 TH
 	describe('GET /api/members/7800764800000006309?point=1000', function () {
 		it('should respond with 7800764800000006309\'s preference in Thai', function (done) {
+			this.timeout(10000);
 			request(app)
 				.get('/api/members/7800764800000006309?point=1000')
 				.set('Accept-Language', 'th')
@@ -197,14 +203,10 @@ describe('Members Endpoint', function () {
 	});
 	
 	
-	
-	
-	//Test Th language
-	
-	
 	//Test Post
 	describe('POST /api/members/1', function () {
 		it('should update preference of MemberID=1', function (done) {
+			this.timeout(10000);
 			request(app)
 				.post('/api/members/1')
 				.send({
