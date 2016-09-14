@@ -8,6 +8,7 @@ var langHelper = require('../lib/lang-helper');
  * @api {get} /api/promotions Get all active promotions
  * @apiName GetPromotions
  * @apiGroup Promotions
+ * @apiHeader {String} Accept-Language Prefered languages
  *
  * @apiSuccess {Number} PromotionID ID of promotion
  * @apiSuccess {Number} LayoutID ID of layout to render the promotion
