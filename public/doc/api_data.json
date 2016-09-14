@@ -324,22 +324,112 @@
     "title": "Get all active promotions",
     "name": "GetPromotions",
     "group": "Promotions",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept-Language",
+            "description": "<p>Prefered languages</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Number",
             "optional": false,
-            "field": "header",
-            "description": "<p>Header of the promotion.</p>"
+            "field": "PromotionID",
+            "description": "<p>ID of promotion</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "LayoutID",
+            "description": "<p>ID of layout to render the promotion</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "body",
-            "description": "<p>HTML tags for Body of the promotion.</p>"
+            "field": "Header",
+            "description": "<p>Header of the promotion</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Body",
+            "description": "<p>Body of the promotion</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgCaption1",
+            "description": "<p>Caption of Image #1</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgURL1",
+            "description": "<p>URL of Image #1</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgLink1",
+            "description": "<p>Link URL if click at Image #1</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgCaption2",
+            "description": "<p>Caption of Image #2</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgURL2",
+            "description": "<p>URL of Image #2</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgLink2",
+            "description": "<p>Link URL if click at Image #2</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgCaption3",
+            "description": "<p>Caption of Image #3</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgURL3",
+            "description": "<p>URL of Image #3</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgLink3",
+            "description": "<p>Link URL if click at Image #3</p>"
           }
         ]
       }
