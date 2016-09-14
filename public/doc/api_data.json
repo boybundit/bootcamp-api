@@ -324,22 +324,112 @@
     "title": "Get all active promotions",
     "name": "GetPromotions",
     "group": "Promotions",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept-Language",
+            "description": "<p>Prefered languages</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Number",
             "optional": false,
-            "field": "header",
-            "description": "<p>Header of the promotion.</p>"
+            "field": "PromotionID",
+            "description": "<p>ID of promotion</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "LayoutID",
+            "description": "<p>ID of layout to render the promotion</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "body",
-            "description": "<p>HTML tags for Body of the promotion.</p>"
+            "field": "Header",
+            "description": "<p>Header of the promotion</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Body",
+            "description": "<p>Body of the promotion</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgCaption1",
+            "description": "<p>Caption of Image #1</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgURL1",
+            "description": "<p>URL of Image #1</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgLink1",
+            "description": "<p>Link URL if click at Image #1</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgCaption2",
+            "description": "<p>Caption of Image #2</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgURL2",
+            "description": "<p>URL of Image #2</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgLink2",
+            "description": "<p>Link URL if click at Image #2</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgCaption3",
+            "description": "<p>Caption of Image #3</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgURL3",
+            "description": "<p>URL of Image #3</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "ImgLink3",
+            "description": "<p>Link URL if click at Image #3</p>"
           }
         ]
       }
@@ -520,10 +610,23 @@
   },
   {
     "type": "get",
-    "url": "/api/stations/nearbyStations/:lat,:long,:lang",
+    "url": "/api/stations/nearbyStations/:lat,:long",
     "title": "Request nearby stations",
     "name": "GetNearbyStations",
     "group": "Station",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept-Language",
+            "description": "<p>Prefered languages. (Accept-Language: th)</p>"
+          }
+        ]
+      }
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -540,13 +643,6 @@
             "optional": false,
             "field": "long",
             "description": "<p>Longitude of the current Location</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "lang",
-            "description": "<p>Language of the interface</p>"
           }
         ]
       }
@@ -625,16 +721,104 @@
     "groupTitle": "Station",
     "sampleRequest": [
       {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/stations/nearbyStations/:lat,:long,:lang"
+        "url": "https://bootcamp-dev.azurewebsites.net/api/stations/nearbyStations/:lat,:long"
       }
     ]
   },
   {
     "type": "get",
-    "url": "/api/getByKeyword/:keyword,:lang",
-    "title": "Request stations by keyword",
-    "name": "GetStaionsByKeyword",
+    "url": "/api/stations/getStationServicesById/:id",
+    "title": "Request services of one station",
+    "name": "GetStationServices",
     "group": "Station",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept-Language",
+            "description": "<p>Prefered languages. (Accept-Language: th)</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "Id",
+            "description": "<p>Id of the station</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Id",
+            "optional": false,
+            "field": "Id",
+            "description": "<p>Id of the station.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "Services",
+            "description": "<p>Services provided in the station</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Services.Type",
+            "description": "<p>type of the services</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Services.Title",
+            "description": "<p>title of the services</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routes/stations.js",
+    "groupTitle": "Station",
+    "sampleRequest": [
+      {
+        "url": "https://bootcamp-dev.azurewebsites.net/api/stations/getStationServicesById/:id"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/api/stations/getByKeyword/:keyword,:lang",
+    "title": "Request stations by keyword",
+    "name": "GetStationsByKeyword",
+    "group": "Station",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept-Language",
+            "description": "<p>Prefered languages. (Accept-Language: th)</p>"
+          }
+        ]
+      }
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -658,13 +842,6 @@
             "optional": false,
             "field": "keyword",
             "description": "<p>Keyword used to search for the stations</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "lang",
-            "description": "<p>Language of the interface</p>"
           }
         ]
       }
@@ -743,7 +920,7 @@
     "groupTitle": "Station",
     "sampleRequest": [
       {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/getByKeyword/:keyword,:lang"
+        "url": "https://bootcamp-dev.azurewebsites.net/api/stations/getByKeyword/:keyword,:lang"
       }
     ]
   }

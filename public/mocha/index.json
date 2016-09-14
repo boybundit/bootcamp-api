@@ -1,14 +1,14 @@
 {
-  "reportTitle": "bootcamp-dev",
+  "reportTitle": "bootcamp-api",
   "stats": {
     "suites": 20,
     "tests": 14,
     "passes": 13,
     "pending": 0,
     "failures": 1,
-    "start": "2016-09-09T09:50:41.233Z",
-    "end": "2016-09-09T09:50:49.972Z",
-    "duration": 8739,
+    "start": "2016-09-14T15:20:44.076Z",
+    "end": "2016-09-14T15:20:55.908Z",
+    "duration": 11832,
     "testsRegistered": 14,
     "passPercent": 92.9,
     "pendingPercent": 0,
@@ -33,7 +33,7 @@
                 "title": "should respond with MemberID=7800764800000006309",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309 should respond with MemberID=7800764800000006309",
                 "timedOut": false,
-                "duration": 939,
+                "duration": 1908,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -41,8 +41,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.MemberID).to.eql(<span class=\"hljs-string\">'7800764800000006309'</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "bc557b62-19cb-448c-ac41-95340b90d8bf",
-                "parentUUID": "0f5a36b6-ae41-46b7-98ea-2dace92a7352",
+                "uuid": "3dfe0f7f-6950-4370-9d21-384aebfd1d8e",
+                "parentUUID": "23ba76da-e978-4a76-baf0-9595c35ab6f1",
                 "skipped": false
               }
             ],
@@ -50,14 +50,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "0f5a36b6-ae41-46b7-98ea-2dace92a7352",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "23ba76da-e978-4a76-baf0-9595c35ab6f1",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should respond with MemberID=7800764800000006309",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309 should respond with MemberID=7800764800000006309",
                 "timedOut": false,
-                "duration": 939,
+                "duration": 1908,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -65,8 +65,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.MemberID).to.eql(<span class=\"hljs-string\">'7800764800000006309'</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "bc557b62-19cb-448c-ac41-95340b90d8bf",
-                "parentUUID": "0f5a36b6-ae41-46b7-98ea-2dace92a7352",
+                "uuid": "3dfe0f7f-6950-4370-9d21-384aebfd1d8e",
+                "parentUUID": "23ba76da-e978-4a76-baf0-9595c35ab6f1",
                 "skipped": false
               }
             ],
@@ -83,7 +83,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 939
+            "duration": 1908
           },
           {
             "title": "GET /api/members/7800764800000006309?point=200",
@@ -93,7 +93,7 @@
                 "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309?point=200 should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
                 "timedOut": false,
-                "duration": 842,
+                "duration": 1141,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -101,8 +101,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=200'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Bronze'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">300</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "f3538a0b-c5e4-4e12-8882-8aff6d11d6df",
-                "parentUUID": "06f3e138-56e6-4595-81af-0fd54bef6af5",
+                "uuid": "748ab33b-7a45-4993-aaf1-6477839f5926",
+                "parentUUID": "f0f70714-a53f-4241-97a0-4f67f2b6af94",
                 "skipped": false
               }
             ],
@@ -110,14 +110,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "06f3e138-56e6-4595-81af-0fd54bef6af5",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "f0f70714-a53f-4241-97a0-4f67f2b6af94",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309?point=200 should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
                 "timedOut": false,
-                "duration": 842,
+                "duration": 1141,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -125,8 +125,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=200'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Bronze'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">300</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "f3538a0b-c5e4-4e12-8882-8aff6d11d6df",
-                "parentUUID": "06f3e138-56e6-4595-81af-0fd54bef6af5",
+                "uuid": "748ab33b-7a45-4993-aaf1-6477839f5926",
+                "parentUUID": "f0f70714-a53f-4241-97a0-4f67f2b6af94",
                 "skipped": false
               }
             ],
@@ -143,7 +143,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 842
+            "duration": 1141
           },
           {
             "title": "GET /api/members/7800764800010136955?point=400",
@@ -153,7 +153,7 @@
                 "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800010136955?point=400 should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
                 "timedOut": false,
-                "duration": 1195,
+                "duration": 1072,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -161,8 +161,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800010136955?point=400'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Silver'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">100</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "c9b54d7e-f2b6-4a2f-9f21-c0ad9ff6ee63",
-                "parentUUID": "c33fe41c-d1dd-45b8-8007-604f62bca41b",
+                "uuid": "36652c64-a37e-42ed-beb3-7bcb8307579e",
+                "parentUUID": "2b5dd439-b141-42eb-b2cf-b35434a42aaa",
                 "skipped": false
               }
             ],
@@ -170,14 +170,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "c33fe41c-d1dd-45b8-8007-604f62bca41b",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "2b5dd439-b141-42eb-b2cf-b35434a42aaa",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800010136955?point=400 should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
                 "timedOut": false,
-                "duration": 1195,
+                "duration": 1072,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -185,8 +185,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800010136955?point=400'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Silver'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">100</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "c9b54d7e-f2b6-4a2f-9f21-c0ad9ff6ee63",
-                "parentUUID": "c33fe41c-d1dd-45b8-8007-604f62bca41b",
+                "uuid": "36652c64-a37e-42ed-beb3-7bcb8307579e",
+                "parentUUID": "2b5dd439-b141-42eb-b2cf-b35434a42aaa",
                 "skipped": false
               }
             ],
@@ -203,7 +203,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 1195
+            "duration": 1072
           },
           {
             "title": "GET /api/members/7800764800000102199?point=650",
@@ -213,7 +213,7 @@
                 "title": "should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000102199?point=650 should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
                 "timedOut": false,
-                "duration": 882,
+                "duration": 1114,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -221,8 +221,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000102199?point=650'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Gold'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">1000</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">350</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "ceda75d0-455e-4f76-9c42-784b115021a3",
-                "parentUUID": "48937d64-2659-47c0-ba5f-8fc45bd9160e",
+                "uuid": "57ecc5ac-8c64-4d5c-8194-4b5cde5a70be",
+                "parentUUID": "991ffa21-b096-483a-9a29-9f146ed8043f",
                 "skipped": false
               }
             ],
@@ -230,14 +230,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "48937d64-2659-47c0-ba5f-8fc45bd9160e",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "991ffa21-b096-483a-9a29-9f146ed8043f",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000102199?point=650 should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
                 "timedOut": false,
-                "duration": 882,
+                "duration": 1114,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -245,8 +245,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000102199?point=650'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Gold'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">1000</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">350</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "ceda75d0-455e-4f76-9c42-784b115021a3",
-                "parentUUID": "48937d64-2659-47c0-ba5f-8fc45bd9160e",
+                "uuid": "57ecc5ac-8c64-4d5c-8194-4b5cde5a70be",
+                "parentUUID": "991ffa21-b096-483a-9a29-9f146ed8043f",
                 "skipped": false
               }
             ],
@@ -263,7 +263,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 882
+            "duration": 1114
           },
           {
             "title": "GET /api/members/7800764800000006309?point=1000",
@@ -273,7 +273,7 @@
                 "title": "should respond with 7800764800000006309's preference ",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference ",
                 "timedOut": false,
-                "duration": 763,
+                "duration": 1106,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -281,8 +281,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'en'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'Car'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'Van'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'Fried Chicken'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'Sushi'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'Lube change &amp; garage services'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'Toilet'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'Mini-mart'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol 95'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol E20'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
                 "isRoot": false,
-                "uuid": "b8f76f9d-be88-432a-97eb-42dcc60956ee",
-                "parentUUID": "dc92c1cb-dd2e-4bfd-a15a-c5842e75619c",
+                "uuid": "5347fcc8-0e1a-4478-acaf-b0391493ee1b",
+                "parentUUID": "1b5a94f3-5882-4a0d-aace-b2155572d42e",
                 "skipped": false
               }
             ],
@@ -290,14 +290,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "dc92c1cb-dd2e-4bfd-a15a-c5842e75619c",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "1b5a94f3-5882-4a0d-aace-b2155572d42e",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should respond with 7800764800000006309's preference ",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference ",
                 "timedOut": false,
-                "duration": 763,
+                "duration": 1106,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -305,8 +305,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'en'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'Car'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'Van'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'Fried Chicken'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'Sushi'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'Lube change &amp; garage services'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'Toilet'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'Mini-mart'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol 95'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol E20'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
                 "isRoot": false,
-                "uuid": "b8f76f9d-be88-432a-97eb-42dcc60956ee",
-                "parentUUID": "dc92c1cb-dd2e-4bfd-a15a-c5842e75619c",
+                "uuid": "5347fcc8-0e1a-4478-acaf-b0391493ee1b",
+                "parentUUID": "1b5a94f3-5882-4a0d-aace-b2155572d42e",
                 "skipped": false
               }
             ],
@@ -323,7 +323,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 763
+            "duration": 1106
           },
           {
             "title": "GET /api/members/7800764800000006309?point=1000",
@@ -333,7 +333,7 @@
                 "title": "should respond with 7800764800000006309's preference in Thai",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference in Thai",
                 "timedOut": false,
-                "duration": 777,
+                "duration": 1118,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -341,8 +341,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'th'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'รถยนต์'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'รถตู้'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'ไก่ทอด'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'ซูชิ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'ห้องน้ำ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'ร้านสะดวกซื้อ'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ ๙๕'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ อี๒๐'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
                 "isRoot": false,
-                "uuid": "16ce591f-676f-4540-ab8e-ee297a4896d2",
-                "parentUUID": "c756ea7b-bef7-481d-9cb5-a8877fc02840",
+                "uuid": "6351d273-e285-4ae5-abf4-920844730d74",
+                "parentUUID": "d778b360-8c10-40e3-970f-5d14b9bbcf20",
                 "skipped": false
               }
             ],
@@ -350,14 +350,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "c756ea7b-bef7-481d-9cb5-a8877fc02840",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "d778b360-8c10-40e3-970f-5d14b9bbcf20",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should respond with 7800764800000006309's preference in Thai",
                 "fullTitle": "Members Endpoint GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference in Thai",
                 "timedOut": false,
-                "duration": 777,
+                "duration": 1118,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -365,8 +365,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'th'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'รถยนต์'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'รถตู้'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'ไก่ทอด'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'ซูชิ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'ห้องน้ำ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'ร้านสะดวกซื้อ'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ ๙๕'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ อี๒๐'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
                 "isRoot": false,
-                "uuid": "16ce591f-676f-4540-ab8e-ee297a4896d2",
-                "parentUUID": "c756ea7b-bef7-481d-9cb5-a8877fc02840",
+                "uuid": "6351d273-e285-4ae5-abf4-920844730d74",
+                "parentUUID": "d778b360-8c10-40e3-970f-5d14b9bbcf20",
                 "skipped": false
               }
             ],
@@ -383,7 +383,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 777
+            "duration": 1118
           },
           {
             "title": "POST /api/members/1",
@@ -393,7 +393,7 @@
                 "title": "should update preference of MemberID=1",
                 "fullTitle": "Members Endpoint POST /api/members/1 should update preference of MemberID=1",
                 "timedOut": false,
-                "duration": 839,
+                "duration": 1126,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -401,8 +401,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.post(<span class=\"hljs-string\">'/api/members/1'</span>)<br>\t.send({<br>\t\t<span class=\"hljs-string\">\"Preference\"</span>: [<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">1</span> },<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">2</span> }<br>\t\t]<br>\t})<br>\t.expect(<span class=\"hljs-number\">302</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "582dcd04-54a7-478d-978e-b0bf07964030",
-                "parentUUID": "30717bbf-75bc-409c-a198-14fab9ada0e0",
+                "uuid": "8bb5fd35-fb57-4b7a-9730-073f4251b853",
+                "parentUUID": "cbe42719-9729-451a-89a0-7984c07a6773",
                 "skipped": false
               }
             ],
@@ -410,14 +410,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\members.js",
-            "uuid": "30717bbf-75bc-409c-a198-14fab9ada0e0",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+            "uuid": "cbe42719-9729-451a-89a0-7984c07a6773",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
             "passes": [
               {
                 "title": "should update preference of MemberID=1",
                 "fullTitle": "Members Endpoint POST /api/members/1 should update preference of MemberID=1",
                 "timedOut": false,
-                "duration": 839,
+                "duration": 1126,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -425,8 +425,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.post(<span class=\"hljs-string\">'/api/members/1'</span>)<br>\t.send({<br>\t\t<span class=\"hljs-string\">\"Preference\"</span>: [<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">1</span> },<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">2</span> }<br>\t\t]<br>\t})<br>\t.expect(<span class=\"hljs-number\">302</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "582dcd04-54a7-478d-978e-b0bf07964030",
-                "parentUUID": "30717bbf-75bc-409c-a198-14fab9ada0e0",
+                "uuid": "8bb5fd35-fb57-4b7a-9730-073f4251b853",
+                "parentUUID": "cbe42719-9729-451a-89a0-7984c07a6773",
                 "skipped": false
               }
             ],
@@ -443,7 +443,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 839
+            "duration": 1126
           }
         ],
         "tests": [],
@@ -451,8 +451,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\members.js",
-        "uuid": "08fe8713-f7c1-4158-b503-0beab80262ed",
-        "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\members.js",
+        "uuid": "06ed1002-de1e-4d79-ba06-5e8d8a99de7f",
+        "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\members.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -480,7 +480,7 @@
                 "title": "should respond with the list of fuel prices",
                 "fullTitle": "Price Endpoint GET /api/prices should respond with the list of fuel prices",
                 "timedOut": false,
-                "duration": 372,
+                "duration": 563,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -488,8 +488,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/prices'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "ec5f1bca-b969-47ab-902a-929df3fbbe66",
-                "parentUUID": "d34d25af-6f8e-467e-a9ac-c0f6266e0a9b",
+                "uuid": "c271b942-12b9-4d26-b423-6f82141edf13",
+                "parentUUID": "e0fb8b9c-327b-4b32-b895-974ac1428a8c",
                 "skipped": false
               }
             ],
@@ -497,14 +497,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\prices.js",
-            "uuid": "d34d25af-6f8e-467e-a9ac-c0f6266e0a9b",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\prices.js",
+            "uuid": "e0fb8b9c-327b-4b32-b895-974ac1428a8c",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\prices.js",
             "passes": [
               {
                 "title": "should respond with the list of fuel prices",
                 "fullTitle": "Price Endpoint GET /api/prices should respond with the list of fuel prices",
                 "timedOut": false,
-                "duration": 372,
+                "duration": 563,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -512,8 +512,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/prices'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "ec5f1bca-b969-47ab-902a-929df3fbbe66",
-                "parentUUID": "d34d25af-6f8e-467e-a9ac-c0f6266e0a9b",
+                "uuid": "c271b942-12b9-4d26-b423-6f82141edf13",
+                "parentUUID": "e0fb8b9c-327b-4b32-b895-974ac1428a8c",
                 "skipped": false
               }
             ],
@@ -530,7 +530,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 372
+            "duration": 563
           }
         ],
         "tests": [],
@@ -538,8 +538,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\prices.js",
-        "uuid": "212f43f0-ad24-4bce-9d48-693275a85a9b",
-        "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\prices.js",
+        "uuid": "b68e0c7a-4814-4351-b4a7-9a1a51c65091",
+        "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\prices.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -567,7 +567,7 @@
                 "title": "should respond with json",
                 "fullTitle": "Promotions Endpoint GET /api/promotions should respond with json",
                 "timedOut": false,
-                "duration": 370,
+                "duration": 540,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -575,8 +575,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/promotions'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "3cb24cf3-c3bf-4667-aa8f-5c434a81e9be",
-                "parentUUID": "ca9cac34-b0bd-4968-b3df-ae5d199e817b",
+                "uuid": "55ed817b-1a56-4893-b28c-6fd433e82b2d",
+                "parentUUID": "006dfe0a-edbe-4722-bede-b713d83c1d6f",
                 "skipped": false
               }
             ],
@@ -584,14 +584,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\promotions.js",
-            "uuid": "ca9cac34-b0bd-4968-b3df-ae5d199e817b",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\promotions.js",
+            "uuid": "006dfe0a-edbe-4722-bede-b713d83c1d6f",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\promotions.js",
             "passes": [
               {
                 "title": "should respond with json",
                 "fullTitle": "Promotions Endpoint GET /api/promotions should respond with json",
                 "timedOut": false,
-                "duration": 370,
+                "duration": 540,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -599,8 +599,8 @@
                 "pending": false,
                 "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/promotions'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "3cb24cf3-c3bf-4667-aa8f-5c434a81e9be",
-                "parentUUID": "ca9cac34-b0bd-4968-b3df-ae5d199e817b",
+                "uuid": "55ed817b-1a56-4893-b28c-6fd433e82b2d",
+                "parentUUID": "006dfe0a-edbe-4722-bede-b713d83c1d6f",
                 "skipped": false
               }
             ],
@@ -617,7 +617,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 370
+            "duration": 540
           }
         ],
         "tests": [],
@@ -625,8 +625,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\promotions.js",
-        "uuid": "42d43c07-f702-4a4f-98a9-dd3565623279",
-        "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\promotions.js",
+        "uuid": "73cffdae-c101-44a8-b7ef-ba93fc7f1eec",
+        "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\promotions.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -662,8 +662,8 @@
                 "pending": false,
                 "code": "assert.equal(<span class=\"hljs-string\">'select t.mytext_th mytext, t.id, t.caption1_th caption1 from tab t;'</span>, <br>             sqlHelper.conv_i18n(<span class=\"hljs-string\">'select t.mytext[_lang], t.id, t.caption1[_lang] from tab t;'</span>,<span class=\"hljs-string\">'th'</span>));<br>done();",
                 "isRoot": false,
-                "uuid": "ff9bde1c-f558-4356-9040-8da1f031a70a",
-                "parentUUID": "3b5f6d49-cd29-41ad-98bd-8b266df6dd8c",
+                "uuid": "ba9a5f7f-f655-43c9-b08a-b7af3c1ff8d4",
+                "parentUUID": "074d62b3-d120-478a-8832-b89eb85d38e3",
                 "skipped": false
               }
             ],
@@ -671,8 +671,8 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\sql-helper.js",
-            "uuid": "3b5f6d49-cd29-41ad-98bd-8b266df6dd8c",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\sql-helper.js",
+            "uuid": "074d62b3-d120-478a-8832-b89eb85d38e3",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\sql-helper.js",
             "passes": [
               {
                 "title": "should respond with sql string",
@@ -686,8 +686,8 @@
                 "pending": false,
                 "code": "assert.equal(<span class=\"hljs-string\">'select t.mytext_th mytext, t.id, t.caption1_th caption1 from tab t;'</span>, <br>             sqlHelper.conv_i18n(<span class=\"hljs-string\">'select t.mytext[_lang], t.id, t.caption1[_lang] from tab t;'</span>,<span class=\"hljs-string\">'th'</span>));<br>done();",
                 "isRoot": false,
-                "uuid": "ff9bde1c-f558-4356-9040-8da1f031a70a",
-                "parentUUID": "3b5f6d49-cd29-41ad-98bd-8b266df6dd8c",
+                "uuid": "ba9a5f7f-f655-43c9-b08a-b7af3c1ff8d4",
+                "parentUUID": "074d62b3-d120-478a-8832-b89eb85d38e3",
                 "skipped": false
               }
             ],
@@ -712,8 +712,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\sql-helper.js",
-        "uuid": "4a6376a2-01a3-4745-8801-589e0f999e05",
-        "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\sql-helper.js",
+        "uuid": "6e720228-00c3-44a2-b37a-4c0b393c52d0",
+        "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\sql-helper.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -741,7 +741,7 @@
                 "title": "should respond with the list of vehicles",
                 "fullTitle": "Static Endpoint GET /api/statics/vehicles should respond with the list of vehicles",
                 "timedOut": false,
-                "duration": 363,
+                "duration": 516,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -749,8 +749,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/vehicles'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "d097a42f-9b85-4678-932f-6412b2f4b060",
-                "parentUUID": "1550134e-3674-4179-8bd1-848053a1d0fd",
+                "uuid": "714c42f5-6041-4507-9055-4d57d69312df",
+                "parentUUID": "208d9a0a-f74c-454f-b86b-a76b960d2465",
                 "skipped": false
               }
             ],
@@ -758,14 +758,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\statics.js",
-            "uuid": "1550134e-3674-4179-8bd1-848053a1d0fd",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\statics.js",
+            "uuid": "208d9a0a-f74c-454f-b86b-a76b960d2465",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\statics.js",
             "passes": [
               {
                 "title": "should respond with the list of vehicles",
                 "fullTitle": "Static Endpoint GET /api/statics/vehicles should respond with the list of vehicles",
                 "timedOut": false,
-                "duration": 363,
+                "duration": 516,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -773,8 +773,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/vehicles'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "d097a42f-9b85-4678-932f-6412b2f4b060",
-                "parentUUID": "1550134e-3674-4179-8bd1-848053a1d0fd",
+                "uuid": "714c42f5-6041-4507-9055-4d57d69312df",
+                "parentUUID": "208d9a0a-f74c-454f-b86b-a76b960d2465",
                 "skipped": false
               }
             ],
@@ -791,7 +791,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 363
+            "duration": 516
           },
           {
             "title": "GET /api/statics/foods",
@@ -801,7 +801,7 @@
                 "title": "should respond with the list of foods",
                 "fullTitle": "Static Endpoint GET /api/statics/foods should respond with the list of foods",
                 "timedOut": false,
-                "duration": 383,
+                "duration": 502,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -809,8 +809,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/foods'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "8463ffbe-6c74-4773-8b0f-88d721c4ae10",
-                "parentUUID": "603c530d-5cf2-46a8-b30e-400b87cf98b1",
+                "uuid": "346864c3-49fa-404e-9f99-27f60031c12a",
+                "parentUUID": "d14962c2-ce59-4191-9ee1-86f775bdb813",
                 "skipped": false
               }
             ],
@@ -818,14 +818,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\statics.js",
-            "uuid": "603c530d-5cf2-46a8-b30e-400b87cf98b1",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\statics.js",
+            "uuid": "d14962c2-ce59-4191-9ee1-86f775bdb813",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\statics.js",
             "passes": [
               {
                 "title": "should respond with the list of foods",
                 "fullTitle": "Static Endpoint GET /api/statics/foods should respond with the list of foods",
                 "timedOut": false,
-                "duration": 383,
+                "duration": 502,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -833,8 +833,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/foods'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "8463ffbe-6c74-4773-8b0f-88d721c4ae10",
-                "parentUUID": "603c530d-5cf2-46a8-b30e-400b87cf98b1",
+                "uuid": "346864c3-49fa-404e-9f99-27f60031c12a",
+                "parentUUID": "d14962c2-ce59-4191-9ee1-86f775bdb813",
                 "skipped": false
               }
             ],
@@ -851,7 +851,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 383
+            "duration": 502
           },
           {
             "title": "GET /api/statics/facilities",
@@ -861,7 +861,7 @@
                 "title": "should respond with the list of facilities",
                 "fullTitle": "Static Endpoint GET /api/statics/facilities should respond with the list of facilities",
                 "timedOut": false,
-                "duration": 376,
+                "duration": 517,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -869,8 +869,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/facilities'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "5fce116f-620c-46a2-947a-7ad34a90ede6",
-                "parentUUID": "74783f9a-862a-4c87-b628-c08c9bc0d682",
+                "uuid": "f41838a4-3746-479f-b1c9-07df604ba586",
+                "parentUUID": "761921f2-a942-4109-b048-e56974a9c78f",
                 "skipped": false
               }
             ],
@@ -878,14 +878,14 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\statics.js",
-            "uuid": "74783f9a-862a-4c87-b628-c08c9bc0d682",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\statics.js",
+            "uuid": "761921f2-a942-4109-b048-e56974a9c78f",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\statics.js",
             "passes": [
               {
                 "title": "should respond with the list of facilities",
                 "fullTitle": "Static Endpoint GET /api/statics/facilities should respond with the list of facilities",
                 "timedOut": false,
-                "duration": 376,
+                "duration": 517,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -893,8 +893,8 @@
                 "pending": false,
                 "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/facilities'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
                 "isRoot": false,
-                "uuid": "5fce116f-620c-46a2-947a-7ad34a90ede6",
-                "parentUUID": "74783f9a-862a-4c87-b628-c08c9bc0d682",
+                "uuid": "f41838a4-3746-479f-b1c9-07df604ba586",
+                "parentUUID": "761921f2-a942-4109-b048-e56974a9c78f",
                 "skipped": false
               }
             ],
@@ -911,7 +911,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 376
+            "duration": 517
           }
         ],
         "tests": [],
@@ -919,8 +919,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\statics.js",
-        "uuid": "375d6224-9d0a-4eac-b4f6-d244865cdfa1",
-        "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\statics.js",
+        "uuid": "f8035499-accc-455e-aa57-94a0f8e0acd8",
+        "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\statics.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -948,7 +948,7 @@
                 "title": "should respond with json",
                 "fullTitle": "Stations Endpoint GET /api/stations should respond with json",
                 "timedOut": false,
-                "duration": 591,
+                "duration": 533,
                 "state": "failed",
                 "pass": false,
                 "fail": true,
@@ -957,11 +957,11 @@
                 "err": {
                   "name": "Error",
                   "message": "expected 200 \"OK\", got 404 \"Not Found\"",
-                  "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1537</span>:<span class=\"hljs-number\">8</span>)"
+                  "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1514</span>:<span class=\"hljs-number\">8</span>)"
                 },
                 "isRoot": false,
-                "uuid": "16addee9-3735-4ee8-8135-f2c3a78d6d7f",
-                "parentUUID": "ec103214-14ec-432e-aab4-f821e9e99c4b",
+                "uuid": "65790735-9079-4a91-8762-4b0222b21c6c",
+                "parentUUID": "85861d06-383e-447d-b73e-2c2ba3bec92e",
                 "skipped": false
               }
             ],
@@ -969,15 +969,15 @@
             "root": false,
             "_timeout": 2000,
             "file": "\\test\\stations.js",
-            "uuid": "ec103214-14ec-432e-aab4-f821e9e99c4b",
-            "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\stations.js",
+            "uuid": "85861d06-383e-447d-b73e-2c2ba3bec92e",
+            "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\stations.js",
             "passes": [],
             "failures": [
               {
                 "title": "should respond with json",
                 "fullTitle": "Stations Endpoint GET /api/stations should respond with json",
                 "timedOut": false,
-                "duration": 591,
+                "duration": 533,
                 "state": "failed",
                 "pass": false,
                 "fail": true,
@@ -986,11 +986,11 @@
                 "err": {
                   "name": "Error",
                   "message": "expected 200 \"OK\", got 404 \"Not Found\"",
-                  "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1537</span>:<span class=\"hljs-number\">8</span>)"
+                  "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1514</span>:<span class=\"hljs-number\">8</span>)"
                 },
                 "isRoot": false,
-                "uuid": "16addee9-3735-4ee8-8135-f2c3a78d6d7f",
-                "parentUUID": "ec103214-14ec-432e-aab4-f821e9e99c4b",
+                "uuid": "65790735-9079-4a91-8762-4b0222b21c6c",
+                "parentUUID": "85861d06-383e-447d-b73e-2c2ba3bec92e",
                 "skipped": false
               }
             ],
@@ -1006,7 +1006,7 @@
             "hasFailures": true,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 591
+            "duration": 533
           }
         ],
         "tests": [],
@@ -1014,8 +1014,8 @@
         "root": false,
         "_timeout": 2000,
         "file": "\\test\\stations.js",
-        "uuid": "28e2ddbc-f14c-4388-ae39-f6ce31cbd127",
-        "fullFile": "C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\test\\stations.js",
+        "uuid": "308c58e7-49b9-4748-8086-7e651d150a2e",
+        "fullFile": "C:\\Users\\Bundit\\Desktop\\bootcamp-api\\test\\stations.js",
         "passes": [],
         "failures": [],
         "skipped": [],
@@ -1037,7 +1037,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-    "uuid": "957c634b-e5ae-4e41-85d7-9716ecabb5f5",
+    "uuid": "28f68520-cb20-4418-bc04-ab70139891c7",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -1062,7 +1062,7 @@
       "title": "should respond with MemberID=7800764800000006309",
       "fullTitle": "GET /api/members/7800764800000006309 should respond with MemberID=7800764800000006309",
       "timedOut": false,
-      "duration": 939,
+      "duration": 1908,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1070,15 +1070,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.MemberID).to.eql(<span class=\"hljs-string\">'7800764800000006309'</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "fc88f35e-1045-4c0b-89d6-f8649cd9acf2",
-      "parentUUID": "0f5a36b6-ae41-46b7-98ea-2dace92a7352",
+      "uuid": "03907ed3-3aaa-49d3-a21e-d51645028c28",
+      "parentUUID": "23ba76da-e978-4a76-baf0-9595c35ab6f1",
       "skipped": false
     },
     {
       "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
       "fullTitle": "GET /api/members/7800764800000006309?point=200 should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
       "timedOut": false,
-      "duration": 842,
+      "duration": 1141,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1086,15 +1086,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=200'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Bronze'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">300</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "fb9d1cdf-33de-4386-b285-6eb6ad1d720e",
-      "parentUUID": "06f3e138-56e6-4595-81af-0fd54bef6af5",
+      "uuid": "f0ab3cc3-891e-445c-80f2-b2248c0fd6d0",
+      "parentUUID": "f0f70714-a53f-4241-97a0-4f67f2b6af94",
       "skipped": false
     },
     {
       "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
       "fullTitle": "GET /api/members/7800764800010136955?point=400 should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
       "timedOut": false,
-      "duration": 1195,
+      "duration": 1072,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1102,15 +1102,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800010136955?point=400'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Silver'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">100</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "50d97f8a-d9c0-4d96-a139-fa758c95e6fc",
-      "parentUUID": "c33fe41c-d1dd-45b8-8007-604f62bca41b",
+      "uuid": "b12ebb9a-c2b3-4fde-a6e5-728ae3ca0a9d",
+      "parentUUID": "2b5dd439-b141-42eb-b2cf-b35434a42aaa",
       "skipped": false
     },
     {
       "title": "should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
       "fullTitle": "GET /api/members/7800764800000102199?point=650 should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
       "timedOut": false,
-      "duration": 882,
+      "duration": 1114,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1118,15 +1118,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000102199?point=650'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Gold'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">1000</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">350</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "f30ed845-d157-4ff4-91b7-04b6c96d6d45",
-      "parentUUID": "48937d64-2659-47c0-ba5f-8fc45bd9160e",
+      "uuid": "aef24c46-f7c2-45b4-bf40-0d36925f99b1",
+      "parentUUID": "991ffa21-b096-483a-9a29-9f146ed8043f",
       "skipped": false
     },
     {
       "title": "should respond with 7800764800000006309's preference ",
       "fullTitle": "GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference ",
       "timedOut": false,
-      "duration": 763,
+      "duration": 1106,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1134,15 +1134,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'en'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'Car'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'Van'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'Fried Chicken'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'Sushi'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'Lube change &amp; garage services'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'Toilet'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'Mini-mart'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol 95'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol E20'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
       "isRoot": false,
-      "uuid": "62760d78-9049-47b6-bea7-24e7c7d79ac0",
-      "parentUUID": "dc92c1cb-dd2e-4bfd-a15a-c5842e75619c",
+      "uuid": "0a9ce331-3243-4168-922d-266d02f25178",
+      "parentUUID": "1b5a94f3-5882-4a0d-aace-b2155572d42e",
       "skipped": false
     },
     {
       "title": "should respond with 7800764800000006309's preference in Thai",
       "fullTitle": "GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference in Thai",
       "timedOut": false,
-      "duration": 777,
+      "duration": 1118,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1150,15 +1150,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'th'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'รถยนต์'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'รถตู้'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'ไก่ทอด'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'ซูชิ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'ห้องน้ำ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'ร้านสะดวกซื้อ'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ ๙๕'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ อี๒๐'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
       "isRoot": false,
-      "uuid": "2b3349e4-6e5b-4d0e-97e7-d8232b0f6887",
-      "parentUUID": "c756ea7b-bef7-481d-9cb5-a8877fc02840",
+      "uuid": "d0be1702-58ab-4308-98d4-c16f41c6d867",
+      "parentUUID": "d778b360-8c10-40e3-970f-5d14b9bbcf20",
       "skipped": false
     },
     {
       "title": "should update preference of MemberID=1",
       "fullTitle": "POST /api/members/1 should update preference of MemberID=1",
       "timedOut": false,
-      "duration": 839,
+      "duration": 1126,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1166,15 +1166,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.post(<span class=\"hljs-string\">'/api/members/1'</span>)<br>\t.send({<br>\t\t<span class=\"hljs-string\">\"Preference\"</span>: [<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">1</span> },<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">2</span> }<br>\t\t]<br>\t})<br>\t.expect(<span class=\"hljs-number\">302</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "ba72b1c3-725e-4d0c-953c-075258571636",
-      "parentUUID": "30717bbf-75bc-409c-a198-14fab9ada0e0",
+      "uuid": "56acc831-d0a5-4176-b593-8a07dab58c7f",
+      "parentUUID": "cbe42719-9729-451a-89a0-7984c07a6773",
       "skipped": false
     },
     {
       "title": "should respond with the list of fuel prices",
       "fullTitle": "GET /api/prices should respond with the list of fuel prices",
       "timedOut": false,
-      "duration": 372,
+      "duration": 563,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1182,15 +1182,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/prices'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "aab0768a-1f55-4256-93a2-fa0c55e0bc78",
-      "parentUUID": "d34d25af-6f8e-467e-a9ac-c0f6266e0a9b",
+      "uuid": "6640dfb7-7508-4422-9989-cbff46264371",
+      "parentUUID": "e0fb8b9c-327b-4b32-b895-974ac1428a8c",
       "skipped": false
     },
     {
       "title": "should respond with json",
       "fullTitle": "GET /api/promotions should respond with json",
       "timedOut": false,
-      "duration": 370,
+      "duration": 540,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1198,8 +1198,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/promotions'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "4e88f905-e473-4a12-a4ec-c56e8282d140",
-      "parentUUID": "ca9cac34-b0bd-4968-b3df-ae5d199e817b",
+      "uuid": "c5df5278-fea9-42e9-9b5c-49ac8c470bf1",
+      "parentUUID": "006dfe0a-edbe-4722-bede-b713d83c1d6f",
       "skipped": false
     },
     {
@@ -1214,15 +1214,15 @@
       "pending": false,
       "code": "assert.equal(<span class=\"hljs-string\">'select t.mytext_th mytext, t.id, t.caption1_th caption1 from tab t;'</span>, <br>             sqlHelper.conv_i18n(<span class=\"hljs-string\">'select t.mytext[_lang], t.id, t.caption1[_lang] from tab t;'</span>,<span class=\"hljs-string\">'th'</span>));<br>done();",
       "isRoot": false,
-      "uuid": "55ab542a-6ca7-46f8-9ce2-eb9ec30ec0b6",
-      "parentUUID": "3b5f6d49-cd29-41ad-98bd-8b266df6dd8c",
+      "uuid": "8d4eecb5-7e16-4378-88f5-3c24beadcfc8",
+      "parentUUID": "074d62b3-d120-478a-8832-b89eb85d38e3",
       "skipped": false
     },
     {
       "title": "should respond with the list of vehicles",
       "fullTitle": "GET /api/statics/vehicles should respond with the list of vehicles",
       "timedOut": false,
-      "duration": 363,
+      "duration": 516,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1230,15 +1230,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/vehicles'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "030237fa-ef56-42f0-8a54-554add852a62",
-      "parentUUID": "1550134e-3674-4179-8bd1-848053a1d0fd",
+      "uuid": "7d411fbc-13f2-4088-9a09-8f6ad3a90726",
+      "parentUUID": "208d9a0a-f74c-454f-b86b-a76b960d2465",
       "skipped": false
     },
     {
       "title": "should respond with the list of foods",
       "fullTitle": "GET /api/statics/foods should respond with the list of foods",
       "timedOut": false,
-      "duration": 383,
+      "duration": 502,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1246,15 +1246,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/foods'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "903a6c6a-5582-47f5-a2c1-cf9091cd7c73",
-      "parentUUID": "603c530d-5cf2-46a8-b30e-400b87cf98b1",
+      "uuid": "994cf369-2af9-4406-980f-8194bc552582",
+      "parentUUID": "d14962c2-ce59-4191-9ee1-86f775bdb813",
       "skipped": false
     },
     {
       "title": "should respond with the list of facilities",
       "fullTitle": "GET /api/statics/facilities should respond with the list of facilities",
       "timedOut": false,
-      "duration": 376,
+      "duration": 517,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1262,15 +1262,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/facilities'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "46799ac1-f5ac-495f-8882-4bab29c3a8ef",
-      "parentUUID": "74783f9a-862a-4c87-b628-c08c9bc0d682",
+      "uuid": "6978dbe9-8e9b-49ad-a8ec-f219529b5cac",
+      "parentUUID": "761921f2-a942-4109-b048-e56974a9c78f",
       "skipped": false
     },
     {
       "title": "should respond with json",
       "fullTitle": "GET /api/stations should respond with json",
       "timedOut": false,
-      "duration": 591,
+      "duration": 533,
       "state": "failed",
       "pass": false,
       "fail": true,
@@ -1279,11 +1279,11 @@
       "err": {
         "name": "Error",
         "message": "expected 200 \"OK\", got 404 \"Not Found\"",
-        "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1537</span>:<span class=\"hljs-number\">8</span>)"
+        "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1514</span>:<span class=\"hljs-number\">8</span>)"
       },
       "isRoot": false,
-      "uuid": "4321332e-5ca6-456b-8266-fa0df1b1072d",
-      "parentUUID": "ec103214-14ec-432e-aab4-f821e9e99c4b",
+      "uuid": "a355e20e-5887-4723-a8f8-53125489f1e0",
+      "parentUUID": "85861d06-383e-447d-b73e-2c2ba3bec92e",
       "skipped": false
     }
   ],
@@ -1293,7 +1293,7 @@
       "title": "should respond with MemberID=7800764800000006309",
       "fullTitle": "GET /api/members/7800764800000006309 should respond with MemberID=7800764800000006309",
       "timedOut": false,
-      "duration": 939,
+      "duration": 1908,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1301,15 +1301,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.MemberID).to.eql(<span class=\"hljs-string\">'7800764800000006309'</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "1aad503e-37e3-461e-82ce-5133938c54d0",
-      "parentUUID": "0f5a36b6-ae41-46b7-98ea-2dace92a7352",
+      "uuid": "adea7b22-ccb8-4185-b1f9-ec344c7617fe",
+      "parentUUID": "23ba76da-e978-4a76-baf0-9595c35ab6f1",
       "skipped": false
     },
     {
       "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
       "fullTitle": "GET /api/members/7800764800000006309?point=200 should respond with Level=Bronze, PointTarget=500 and PointNeeded=300",
       "timedOut": false,
-      "duration": 842,
+      "duration": 1141,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1317,15 +1317,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=200'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Bronze'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">300</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "d9e03580-518b-446a-a67d-fe1c1bffe825",
-      "parentUUID": "06f3e138-56e6-4595-81af-0fd54bef6af5",
+      "uuid": "e7ea7417-7c77-49cb-8c2b-15bb5a952192",
+      "parentUUID": "f0f70714-a53f-4241-97a0-4f67f2b6af94",
       "skipped": false
     },
     {
       "title": "should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
       "fullTitle": "GET /api/members/7800764800010136955?point=400 should respond with Level=Bronze, PointTarget=500 and PointNeeded=100",
       "timedOut": false,
-      "duration": 1195,
+      "duration": 1072,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1333,15 +1333,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800010136955?point=400'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Silver'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">500</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">100</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "be09a58c-3c79-4d41-b6ac-cbf2f48d88c8",
-      "parentUUID": "c33fe41c-d1dd-45b8-8007-604f62bca41b",
+      "uuid": "8f76eef9-32c0-43d7-950f-95113cbcb941",
+      "parentUUID": "2b5dd439-b141-42eb-b2cf-b35434a42aaa",
       "skipped": false
     },
     {
       "title": "should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
       "fullTitle": "GET /api/members/7800764800000102199?point=650 should respond with Level=Bronze, PointTarget=1000 and PointNeeded=350",
       "timedOut": false,
-      "duration": 882,
+      "duration": 1114,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1349,15 +1349,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000102199?point=650'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Level).to.eql(<span class=\"hljs-string\">'Gold'</span>);<br>\t\texpect(res.body.PointTarget).to.eql(<span class=\"hljs-number\">1000</span>);<br>\t\texpect(res.body.PointNeeded).to.eql(<span class=\"hljs-number\">350</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "2a80b974-763a-488f-a175-20aa5e9b82e8",
-      "parentUUID": "48937d64-2659-47c0-ba5f-8fc45bd9160e",
+      "uuid": "b6915c7b-2209-4fc0-bc29-2efbe8947007",
+      "parentUUID": "991ffa21-b096-483a-9a29-9f146ed8043f",
       "skipped": false
     },
     {
       "title": "should respond with 7800764800000006309's preference ",
       "fullTitle": "GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference ",
       "timedOut": false,
-      "duration": 763,
+      "duration": 1106,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1365,15 +1365,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'en'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'Car'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'Van'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'Fried Chicken'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'Sushi'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'Lube change &amp; garage services'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'Toilet'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'Mini-mart'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol 95'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'Gasohol E20'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
       "isRoot": false,
-      "uuid": "76696715-2fb8-4ce6-b356-7e0740f00b5b",
-      "parentUUID": "dc92c1cb-dd2e-4bfd-a15a-c5842e75619c",
+      "uuid": "6814d0f1-2b1b-4bbb-94bc-9eef052bd3d3",
+      "parentUUID": "1b5a94f3-5882-4a0d-aace-b2155572d42e",
       "skipped": false
     },
     {
       "title": "should respond with 7800764800000006309's preference in Thai",
       "fullTitle": "GET /api/members/7800764800000006309?point=1000 should respond with 7800764800000006309's preference in Thai",
       "timedOut": false,
-      "duration": 777,
+      "duration": 1118,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1381,15 +1381,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/members/7800764800000006309?point=1000'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept-Language'</span>, <span class=\"hljs-string\">'th'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">0</span>].Title).to.eql(<span class=\"hljs-string\">'รถยนต์'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeID).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Description).to.eql(<span class=\"hljs-string\">'Vehicle'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">1</span>].Title).to.eql(<span class=\"hljs-string\">'รถตู้'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].TypeNumber).to.eql(<span class=\"hljs-number\">1</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">2</span>].Title).to.eql(<span class=\"hljs-string\">'ไก่ทอด'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeID).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Description).to.eql(<span class=\"hljs-string\">'Food'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">3</span>].Title).to.eql(<span class=\"hljs-string\">'ซูชิ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">4</span>].Title).to.eql(<span class=\"hljs-string\">'บริการเปลี่ยนถ่ายน้ำมันเครื่อง และ อื่นๆ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">5</span>].Title).to.eql(<span class=\"hljs-string\">'ห้องน้ำ'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeID).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Description).to.eql(<span class=\"hljs-string\">'Facility'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].TypeNumber).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">6</span>].Title).to.eql(<span class=\"hljs-string\">'ร้านสะดวกซื้อ'</span>);<br>\t\t\t\t\t\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].TypeNumber).to.eql(<span class=\"hljs-number\">2</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">7</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ ๙๕'</span>);<br>\t\t<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeID).to.eql(<span class=\"hljs-number\">4</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Description).to.eql(<span class=\"hljs-string\">'Fuel'</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].TypeNumber).to.eql(<span class=\"hljs-number\">3</span>);<br>\t\texpect(res.body.Preference[<span class=\"hljs-number\">8</span>].Title).to.eql(<span class=\"hljs-string\">'แก๊สโซฮอลล์ อี๒๐'</span>);<br>\t\t<br>\t\tdone();\t<br>\t});",
       "isRoot": false,
-      "uuid": "9aa5a6c6-9260-422a-8b6b-0c6e31f4691a",
-      "parentUUID": "c756ea7b-bef7-481d-9cb5-a8877fc02840",
+      "uuid": "c8d851fe-db18-437f-bed0-7d7149d935b7",
+      "parentUUID": "d778b360-8c10-40e3-970f-5d14b9bbcf20",
       "skipped": false
     },
     {
       "title": "should update preference of MemberID=1",
       "fullTitle": "POST /api/members/1 should update preference of MemberID=1",
       "timedOut": false,
-      "duration": 839,
+      "duration": 1126,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1397,15 +1397,15 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.post(<span class=\"hljs-string\">'/api/members/1'</span>)<br>\t.send({<br>\t\t<span class=\"hljs-string\">\"Preference\"</span>: [<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">1</span> },<br>\t\t\t{ <span class=\"hljs-string\">\"TypeID\"</span>: <span class=\"hljs-number\">1</span>, <span class=\"hljs-string\">\"TypeNumber\"</span>: <span class=\"hljs-number\">2</span> }<br>\t\t]<br>\t})<br>\t.expect(<span class=\"hljs-number\">302</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "56adf10a-8fb9-4fa0-a402-2c6db9c5aec4",
-      "parentUUID": "30717bbf-75bc-409c-a198-14fab9ada0e0",
+      "uuid": "4d1c6adb-66c3-460c-9df5-b2e82f8ed4ff",
+      "parentUUID": "cbe42719-9729-451a-89a0-7984c07a6773",
       "skipped": false
     },
     {
       "title": "should respond with the list of fuel prices",
       "fullTitle": "GET /api/prices should respond with the list of fuel prices",
       "timedOut": false,
-      "duration": 372,
+      "duration": 563,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1413,15 +1413,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/prices'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "aa558fb5-9e1e-41f8-8d86-90aeafea0625",
-      "parentUUID": "d34d25af-6f8e-467e-a9ac-c0f6266e0a9b",
+      "uuid": "42a05a6e-2843-4d46-b4a4-3834c550f2ce",
+      "parentUUID": "e0fb8b9c-327b-4b32-b895-974ac1428a8c",
       "skipped": false
     },
     {
       "title": "should respond with json",
       "fullTitle": "GET /api/promotions should respond with json",
       "timedOut": false,
-      "duration": 370,
+      "duration": 540,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1429,8 +1429,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">this</span>.timeout(<span class=\"hljs-number\">10000</span>);<br>request(app)<br>\t.get(<span class=\"hljs-string\">'/api/promotions'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\t<span class=\"hljs-built_in\">console</span>.log(res.text);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "0e4e9415-3c12-4d25-9017-1d90cd5616cb",
-      "parentUUID": "ca9cac34-b0bd-4968-b3df-ae5d199e817b",
+      "uuid": "b16fa6c4-1b3e-4110-a242-fd48e1707522",
+      "parentUUID": "006dfe0a-edbe-4722-bede-b713d83c1d6f",
       "skipped": false
     },
     {
@@ -1445,15 +1445,15 @@
       "pending": false,
       "code": "assert.equal(<span class=\"hljs-string\">'select t.mytext_th mytext, t.id, t.caption1_th caption1 from tab t;'</span>, <br>             sqlHelper.conv_i18n(<span class=\"hljs-string\">'select t.mytext[_lang], t.id, t.caption1[_lang] from tab t;'</span>,<span class=\"hljs-string\">'th'</span>));<br>done();",
       "isRoot": false,
-      "uuid": "a54017fe-6efd-476a-9fcc-c655d7778d5e",
-      "parentUUID": "3b5f6d49-cd29-41ad-98bd-8b266df6dd8c",
+      "uuid": "719ce5f5-6e11-45e2-ac20-88334b2d7ca7",
+      "parentUUID": "074d62b3-d120-478a-8832-b89eb85d38e3",
       "skipped": false
     },
     {
       "title": "should respond with the list of vehicles",
       "fullTitle": "GET /api/statics/vehicles should respond with the list of vehicles",
       "timedOut": false,
-      "duration": 363,
+      "duration": 516,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1461,15 +1461,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/vehicles'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "c36f63b6-653d-4617-a561-c49bc63d048a",
-      "parentUUID": "1550134e-3674-4179-8bd1-848053a1d0fd",
+      "uuid": "bd36597c-1f78-473b-a2e8-2c8fee7cfc9d",
+      "parentUUID": "208d9a0a-f74c-454f-b86b-a76b960d2465",
       "skipped": false
     },
     {
       "title": "should respond with the list of foods",
       "fullTitle": "GET /api/statics/foods should respond with the list of foods",
       "timedOut": false,
-      "duration": 383,
+      "duration": 502,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1477,15 +1477,15 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/foods'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "0f59e02a-8c49-43b7-940e-efde013563df",
-      "parentUUID": "603c530d-5cf2-46a8-b30e-400b87cf98b1",
+      "uuid": "eaf81c0f-d26f-4be0-b911-018d18bea819",
+      "parentUUID": "d14962c2-ce59-4191-9ee1-86f775bdb813",
       "skipped": false
     },
     {
       "title": "should respond with the list of facilities",
       "fullTitle": "GET /api/statics/facilities should respond with the list of facilities",
       "timedOut": false,
-      "duration": 376,
+      "duration": 517,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1493,8 +1493,8 @@
       "pending": false,
       "code": "request(app)<br>\t.get(<span class=\"hljs-string\">'/api/statics/facilities'</span>)<br>\t.set(<span class=\"hljs-string\">'Accept'</span>, <span class=\"hljs-string\">'application/json'</span>)<br>\t.expect(<span class=\"hljs-number\">200</span>)<br>\t.end(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">err, res</span>) </span>{<br>\t\t<span class=\"hljs-keyword\">if</span> (err) {<br>\t\t\t<span class=\"hljs-keyword\">return</span> done(err);<br>\t\t}<br>\t\texpect(res.body).to.be.an(<span class=\"hljs-string\">'array'</span>);<br>\t\texpect(res.body.length).to.be.greaterThan(<span class=\"hljs-number\">0</span>);<br>\t\tdone();<br>\t});",
       "isRoot": false,
-      "uuid": "759e489c-3286-4493-b0f0-f5d1ef376e8e",
-      "parentUUID": "74783f9a-862a-4c87-b628-c08c9bc0d682",
+      "uuid": "07c32488-1366-4981-8202-b18942df4a5f",
+      "parentUUID": "761921f2-a942-4109-b048-e56974a9c78f",
       "skipped": false
     }
   ],
@@ -1503,7 +1503,7 @@
       "title": "should respond with json",
       "fullTitle": "GET /api/stations should respond with json",
       "timedOut": false,
-      "duration": 591,
+      "duration": 533,
       "state": "failed",
       "pass": false,
       "fail": true,
@@ -1512,11 +1512,11 @@
       "err": {
         "name": "Error",
         "message": "expected 200 \"OK\", got 404 \"Not Found\"",
-        "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\kittinat.p\\Documents\\DigitalMarketing\\bootcamp-dev\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1537</span>:<span class=\"hljs-number\">8</span>)"
+        "stack": "<span class=\"hljs-built_in\">Error</span>: expected <span class=\"hljs-number\">200</span> <span class=\"hljs-string\">\"OK\"</span>, got <span class=\"hljs-number\">404</span> <span class=\"hljs-string\">\"Not Found\"</span><br>    at Test._assertStatus (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">250</span>:<span class=\"hljs-number\">12</span>)<br>    at Test._assertFunction (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">265</span>:<span class=\"hljs-number\">11</span>)<br>    at Test.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">153</span>:<span class=\"hljs-number\">18</span>)<br>    at Server.assert (C:\\Users\\Bundit\\Desktop\\bootcamp-api\\node_modules\\supertest\\lib\\test.js:<span class=\"hljs-number\">131</span>:<span class=\"hljs-number\">12</span>)<br>    at emitCloseNT (net.js:<span class=\"hljs-number\">1514</span>:<span class=\"hljs-number\">8</span>)"
       },
       "isRoot": false,
-      "uuid": "48123c7f-213e-4171-8a64-d7124edb0e42",
-      "parentUUID": "ec103214-14ec-432e-aab4-f821e9e99c4b",
+      "uuid": "3ee9a4b0-d8a1-418d-ae43-7cd8acc6a5e3",
+      "parentUUID": "85861d06-383e-447d-b73e-2c2ba3bec92e",
       "skipped": false
     }
   ],
