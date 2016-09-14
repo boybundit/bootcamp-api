@@ -632,14 +632,14 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "lat",
             "description": "<p>Latitude of the current Location.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "long",
             "description": "<p>Longitude of the current Location</p>"
@@ -751,7 +751,7 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "Id",
+            "field": "id",
             "description": "<p>Id of the station</p>"
           }
         ]
@@ -802,7 +802,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/api/stations/getByKeyword/:keyword,:lang",
+    "url": "/api/stations/getByKeyword/:lat,:long,:keyword",
     "title": "Request stations by keyword",
     "name": "GetStationsByKeyword",
     "group": "Station",
@@ -824,14 +824,14 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "lat",
             "description": "<p>Latitude of the current Location.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "long",
             "description": "<p>Longitude of the current Location</p>"
@@ -860,7 +860,7 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "Address",
+            "field": "AddressLine",
             "description": "<p>Address of the station.</p>"
           },
           {
@@ -920,7 +920,7 @@ define({ "api": [
     "groupTitle": "Station",
     "sampleRequest": [
       {
-        "url": "https://bootcamp-dev.azurewebsites.net/api/stations/getByKeyword/:keyword,:lang"
+        "url": "https://bootcamp-dev.azurewebsites.net/api/stations/getByKeyword/:lat,:long,:keyword"
       }
     ]
   }
