@@ -104,7 +104,7 @@ router.get('/getByKeyword/:lat,:long,:keyword', function (req, res) {
  * @apiSuccess {String} Services.Type type of the services
  * @apiSuccess {String} Services.Title title of the services
  */
-router.get('/getStationServicesById/:id,', function (req, res) {
+router.get('/getStationServicesById/:id', function (req, res) {
 	var output;
 	var language = langHelper.getRequestedLanguage(req);
 	db.sql(conv_i18n("select st.Description Type, stt.Title[_lang]",language) +
